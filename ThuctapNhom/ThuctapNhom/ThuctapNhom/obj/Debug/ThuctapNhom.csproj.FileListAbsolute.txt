@@ -143,3 +143,6 @@ C:\Users\HuyHunter\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\o
 C:\Users\HuyHunter\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\obj\Debug\ThuctapNhom.FormStart.resources
 C:\Users\HuyHunter\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\obj\Debug\ThuctapNhom.Properties.Resources.resources
 C:\Users\HuyHunter\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\obj\Debug\ThuctapNhom.csproj.GenerateResource.Cache
+C:\Users\Latitude\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\bin\Debug\ThuctapNhom.exe.config
+C:\Users\Latitude\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\obj\Debug\ThuctapNhom.exe
+C:\Users\Latitude\Documents\GitHub\quanli\ThuctapNhom\ThuctapNhom\ThuctapNhom\obj\Debug\ThuctapNhom.pdb
