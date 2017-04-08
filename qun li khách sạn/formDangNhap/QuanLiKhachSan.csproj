@@ -47,9 +47,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\Connection.cs" />
+    <Compile Include="Class\DoDung.cs" />
     <Compile Include="Class\golbalDalameter.cs" />
     <Compile Include="Class\HoaDonBus.cs" />
     <Compile Include="Class\HoaDonObj.cs" />
+    <Compile Include="Class\KhachThueObj.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
