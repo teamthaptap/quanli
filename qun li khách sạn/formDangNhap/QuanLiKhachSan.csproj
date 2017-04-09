@@ -94,24 +94,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThemDichVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemDichVu.Designer.cs">
-      <DependentUpon>ThemDichVu.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThemDoDung.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemDoDung.Designer.cs">
-      <DependentUpon>ThemDoDung.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ThemDoDungTrongPhong.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemDoDungTrongPhong.Designer.cs">
-      <DependentUpon>ThemDoDungTrongPhong.cs</DependentUpon>
-    </Compile>
+    <Compile Include="SQLHelper.cs" />
     <Compile Include="ThemHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -170,15 +153,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="ThemDichVu.resx">
-      <DependentUpon>ThemDichVu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThemDoDung.resx">
-      <DependentUpon>ThemDoDung.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ThemDoDungTrongPhong.resx">
-      <DependentUpon>ThemDoDungTrongPhong.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ThemHoaDon.resx">
       <DependentUpon>ThemHoaDon.cs</DependentUpon>
     </EmbeddedResource>

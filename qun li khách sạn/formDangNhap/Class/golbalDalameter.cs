@@ -8,6 +8,6 @@ namespace formDangNhap.Class
 {
     public class golbalDalameter
     {
-        public static String str = @"Data Source=HUYHUNTER-PC\SQLEXPRESS;Initial Catalog=QL_KhachSan;Integrated Security=True";
+        public static String str = @"Data Source=PHAMTUNG\SQLEXPRESS;Initial Catalog=QL_KhachSan;Integrated Security=True";
     }
 }

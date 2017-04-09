@@ -31,3 +31,22 @@ C:\Users\HuyHunter\Documents\Visual Studio 2015\Projects\QuanLiKhachSan\formDang
 C:\Users\HuyHunter\Documents\Visual Studio 2015\Projects\QuanLiKhachSan\formDangNhap\obj\Debug\formDangNhap.ThemDoDungTrongPhong.resources
 C:\Users\HuyHunter\Documents\Visual Studio 2015\Projects\QuanLiKhachSan\formDangNhap\obj\Debug\formDangNhap.ThemKhachThuePhong.resources
 C:\Users\HuyHunter\Documents\Visual Studio 2015\Projects\QuanLiKhachSan\formDangNhap\obj\Debug\formDangNhap.ThemPhong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\bin\Debug\formDangNhap.exe.config
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.exe
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.pdb
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\bin\Debug\formDangNhap.exe
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\bin\Debug\formDangNhap.pdb
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\QuanLiKhachSan.csprojResolveAssemblyReference.cache
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.form1.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.DoDungTrongPhong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.DoDung.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.DichVu.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.FormMain.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.HoaDon.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.KhachThuePhong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.Phong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.Properties.Resources.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.ThemHoaDon.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.ThemKhachThuePhong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.ThemPhong.resources
+D:\Github\quanli\quanli\qun li khách sạn\formDangNhap\obj\Debug\QuanLiKhachSan.csproj.GenerateResource.Cache

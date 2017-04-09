@@ -26,7 +26,7 @@ namespace formDangNhap
         private void Form1_Load(object sender, EventArgs e)
         {
             txtMatKhau.PasswordChar = '*';
-            MessageBox.Show("Do you want???", "huy", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+            MessageBox.Show("Do you want???", "Login", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
            
         }
 
@@ -36,7 +36,7 @@ namespace formDangNhap
             {
                 conn = new SqlConnection(golbalDalameter.str);
                 conn.Open();
-                string sql = "select count(*) from [dbo].[User] where username=@acc and password=@pass";
+                string sql = "select count(*) from [dbo].[tblDangNhap] where username=@acc and pass=@pass";
                 cm = new SqlCommand(sql, conn);
                 cm.Parameters.Add(new SqlParameter("@acc", txtTK.Text));
                 cm.Parameters.Add(new SqlParameter("@pass", txtMatKhau.Text));
