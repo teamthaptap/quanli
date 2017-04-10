@@ -8,10 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Microsoft.ApplicationBlocks.Data;
 namespace formDangNhap
 {
     public partial class ThemKhachThuePhong : Form
     {
+        string strConnect = @"Data Source =LATITUDE-PC;Initial Catalog = QL_KhachSan; Integrated Security = True";
         public ThemKhachThuePhong()
         {
             InitializeComponent();
@@ -23,6 +25,24 @@ namespace formDangNhap
             this.Hide();
             ktp.Show();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string makh = txtMaKH.Text.Trim();
+                string tenkh = txtTenKH.Text.Trim();
+                string gt = TxtNguoiLap.Text.Trim();
+                DateTime ngaysinh = DateTime.Parse(dtpNgaysinh.Value.ToString());
+                string gioitinh = txtGioiTinh.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strConnect,"ADDKhachThuePhong",makh,tenkh,gt,ngaysinh,gioitinh);
+                MessageBox.Show("thành công");
+            }
+            catch(Exception )
+            {
+                MessageBox.Show("lỗi");
+            }
         }
     }
 }

@@ -1,14 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data;
-using System.Data.SqlClient;
 using formDangNhap.Class;
 
 namespace formDangNhap
@@ -101,7 +93,7 @@ namespace formDangNhap
             hd.MAHD = txtMaHd.Text;
             hd.MAKH = txtMaKH.Text;
             hd.NGUOILAP = TxtNguoiLap.Text;
-            //hd.TONGTIEN = float.Parse(txtTongTien.ToString());
+            hd.TONGTIEN = float.Parse(txtTongTien.ToString());
             hd.TGMUON = dtpTGmuon.Value;
             hd.TGTRA = dtpTGtra.Value;
             HoaDonBus bus = new HoaDonBus();

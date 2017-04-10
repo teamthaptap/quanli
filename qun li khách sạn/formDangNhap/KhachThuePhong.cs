@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Microsoft.ApplicationBlocks.Data;
 namespace formDangNhap
 {
     public partial class KhachThuePhong : Form
     {
+        string strConnect = @"Data Source =LATITUDE-PC;Initial Catalog = QL_KhachSan; Integrated Security = True";
         public KhachThuePhong()
         {
             InitializeComponent();
@@ -29,6 +30,14 @@ namespace formDangNhap
             FormMain fm = new FormMain();
             this.Hide();
             fm.Show();
+        }
+        public void LoadData()
+        {
+            dgvHienThi.DataSource = SqlHelper.ExecuteDataset(strConnect,"HienThiKTP").Tables[0];
+        }
+        private void KhachThuePhong_Load(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }

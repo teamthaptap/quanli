@@ -23,7 +23,7 @@ namespace formDangNhap.Class
                 conn.Open();
                 return 0;
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 return -1;
             }
@@ -59,7 +59,7 @@ namespace formDangNhap.Class
             {
                 ret = cm.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 ret = -1;
             }
@@ -82,7 +82,7 @@ namespace formDangNhap.Class
             {
                 ret = cm.ExecuteNonQuery();
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 ret = -1;
             }
@@ -104,7 +104,7 @@ namespace formDangNhap.Class
             {
                 ret = da.Fill(ds, tableName);
             }
-            catch (Exception e)
+            catch (Exception )
             {
                 ret = -1;
             }

@@ -210,6 +210,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "KhachThuePhong";
             this.Text = "Khách thuê phòng";
+            this.Load += new System.EventHandler(this.KhachThuePhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
