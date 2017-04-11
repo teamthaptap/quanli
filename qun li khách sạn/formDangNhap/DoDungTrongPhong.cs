@@ -8,8 +8,8 @@ namespace formDangNhap
 {
     public partial class DoDungTrongPhong : Form
     {
-        string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
-
+        //string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        string strConnect = @"Data Source =LATITUDE-PC;Initial Catalog = QL_KhachSan; Integrated Security = True";
         public DoDungTrongPhong()
         {
             InitializeComponent();
