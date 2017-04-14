@@ -187,6 +187,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "DichVu";
             this.Text = "Dịch vụ";
+            this.Load += new System.EventHandler(this.DichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

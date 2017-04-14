@@ -14,7 +14,7 @@ namespace formDangNhap
     public partial class DichVu : Form
     {
         //string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
-        string strConnect = @"Data Source =LATITUDE-PC;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        string strConnect = @"Data Source=KN-PC\KN;Initial Catalog=QL_KhachSan;Integrated Security=True";
 
         public DichVu()
         {
@@ -61,6 +61,11 @@ namespace formDangNhap
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             LoadDichVu();
+        }
+
+        private void DichVu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

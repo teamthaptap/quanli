@@ -211,6 +211,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "DoDungTrongPhong";
             this.Text = "Đồ dùng trong phòng";
+            this.Load += new System.EventHandler(this.DoDungTrongPhong_Load_1);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

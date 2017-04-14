@@ -44,6 +44,11 @@
             this.txtMadd = new System.Windows.Forms.TextBox();
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
             this.txtGiamua = new System.Windows.Forms.TextBox();
+            this.MaDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaMua = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +79,7 @@
             this.btnSua.TabIndex = 32;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -171,11 +177,21 @@
             // 
             // dgvHienThi
             // 
+            this.dgvHienThi.AllowUserToAddRows = false;
+            this.dgvHienThi.AllowUserToDeleteRows = false;
             this.dgvHienThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHienThi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaDD,
+            this.TenDD,
+            this.SoLuong,
+            this.DonViTinh,
+            this.GiaMua});
             this.dgvHienThi.Location = new System.Drawing.Point(3, 12);
             this.dgvHienThi.Name = "dgvHienThi";
+            this.dgvHienThi.ReadOnly = true;
             this.dgvHienThi.Size = new System.Drawing.Size(514, 297);
             this.dgvHienThi.TabIndex = 19;
+            this.dgvHienThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienThi_CellContentClick);
             // 
             // txtGiamua
             // 
@@ -183,6 +199,41 @@
             this.txtGiamua.Name = "txtGiamua";
             this.txtGiamua.Size = new System.Drawing.Size(197, 20);
             this.txtGiamua.TabIndex = 35;
+            // 
+            // MaDD
+            // 
+            this.MaDD.DataPropertyName = "MaDD";
+            this.MaDD.HeaderText = "Mã Đồ Dùng";
+            this.MaDD.Name = "MaDD";
+            this.MaDD.ReadOnly = true;
+            // 
+            // TenDD
+            // 
+            this.TenDD.DataPropertyName = "TenDD";
+            this.TenDD.HeaderText = "Tên Đồ Dùng";
+            this.TenDD.Name = "TenDD";
+            this.TenDD.ReadOnly = true;
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            this.SoLuong.ReadOnly = true;
+            // 
+            // DonViTinh
+            // 
+            this.DonViTinh.DataPropertyName = "DonViTinh";
+            this.DonViTinh.HeaderText = "Đơn Vị Tính";
+            this.DonViTinh.Name = "DonViTinh";
+            this.DonViTinh.ReadOnly = true;
+            // 
+            // GiaMua
+            // 
+            this.GiaMua.DataPropertyName = "GiaMua";
+            this.GiaMua.HeaderText = "Gia Mua";
+            this.GiaMua.Name = "GiaMua";
+            this.GiaMua.ReadOnly = true;
             // 
             // DoDung
             // 
@@ -207,6 +258,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "DoDung";
             this.Text = "Đồ Dùng";
+            this.Load += new System.EventHandler(this.DoDung_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,5 +283,10 @@
         private System.Windows.Forms.TextBox txtMadd;
         private System.Windows.Forms.DataGridView dgvHienThi;
         private System.Windows.Forms.TextBox txtGiamua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaDD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenDD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DonViTinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaMua;
     }
 }
