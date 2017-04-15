@@ -97,3 +97,6 @@ C:\Users\KN\Documents\GitHub\quanli\qun li khách sạn\formDangNhap\obj\Debug\f
 C:\Users\KN\Documents\GitHub\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.ThemKhachThuePhong.resources
 C:\Users\KN\Documents\GitHub\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.ThemPhong.resources
 C:\Users\KN\Documents\GitHub\quanli\qun li khách sạn\formDangNhap\obj\Debug\QuanLiKhachSan.csproj.GenerateResource.Cache
+D:\Github\quanli\qun li khách sạn\formDangNhap\bin\Debug\formDangNhap.exe.config
+D:\Github\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.exe
+D:\Github\quanli\qun li khách sạn\formDangNhap\obj\Debug\formDangNhap.pdb
