@@ -16,3 +16,6 @@ D:\Thực tập nhóm_TH13\QLTV\QLTV\obj\Debug\QLTV.ControlDausach.resources
 D:\Thực tập nhóm_TH13\QLTV\QLTV\obj\Debug\QLTV.TheloaiControl.resources
 D:\Thực tập nhóm_TH13\QLTV\QLTV\obj\Debug\QLTV.CTPMControl.resources
 D:\Thực tập nhóm_TH13\QLTV\QLTV\obj\Debug\QLTV.PhieumuonControl.resources
+D:\Github\quanli\quan li thư viện\QLTV\QLTV\bin\Debug\QLTV.exe.config
+D:\Github\quanli\quan li thư viện\QLTV\QLTV\obj\Debug\QLTV.exe
+D:\Github\quanli\quan li thư viện\QLTV\QLTV\obj\Debug\QLTV.pdb
