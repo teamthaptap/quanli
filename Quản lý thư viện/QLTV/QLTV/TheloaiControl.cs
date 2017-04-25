@@ -32,10 +32,5 @@ namespace QLTV
         {
             loaddulieu();
         }
-
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

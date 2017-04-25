@@ -403,7 +403,7 @@ namespace QLTV
             this.Controls.Add(this.splitContainer1);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "i";
+            this.Text = "Quản lý thư viện";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
