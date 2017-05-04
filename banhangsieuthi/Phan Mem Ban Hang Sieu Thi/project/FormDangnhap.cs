@@ -24,16 +24,19 @@ namespace project
         private void btnDangnhap_Click(object sender, EventArgs e)
         {
             FormMenu frommenu = new FormMenu();
-            if (txtMatkhau.Text == "phong" && txtTendangnhap.Text == "admin")
-            {
-                this.Hide();
-                frommenu.Closed += (s, args) => this.Close();
-                frommenu.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng", "Đăng Nhập Thất Bại", MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
-            }
+            //if (txtMatkhau.Text == "phong" && txtTendangnhap.Text == "admin")
+            //{
+            //    this.Hide();
+            //    frommenu.Closed += (s, args) => this.Close();
+            //    frommenu.ShowDialog();
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Tên Đăng Nhập Hoặc Mật Khẩu Không Đúng", "Đăng Nhập Thất Bại", MessageBoxButtons.OKCancel,MessageBoxIcon.Error);
+            //}
+            this.Hide();
+            frommenu.Closed += (s, args) => this.Close();
+            frommenu.ShowDialog();
         }
 
         private void btnQuenmatkhau_Click(object sender, EventArgs e)
