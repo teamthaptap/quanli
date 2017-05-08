@@ -18,6 +18,7 @@ namespace QLTV
         {
             InitializeComponent();
             KetNoiCSDL();
+            LoadData();
         }
         SqlConnection con = new SqlConnection(@"Data Source=KN-PC\KN;Initial Catalog=QL_ThuVien;Integrated Security=True");
         //ham ket noi
@@ -73,9 +74,51 @@ namespace QLTV
 
 
         }
+        public void themND(string ma, string ten, string gioitinh, string ngaysinh, string cmnd, string malop, string diachi, string email, string sdt)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "them_ND";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("ma", SqlDbType.NVarChar)).Value = ma;
+                comd.Parameters.Add(new SqlParameter("ten", SqlDbType.NVarChar)).Value = ten;
+                comd.Parameters.Add(new SqlParameter("gioitinh", SqlDbType.NVarChar)).Value = gioitinh;
+                comd.Parameters.Add(new SqlParameter("ngaysinh", SqlDbType.Date)).Value = ngaysinh;
+                comd.Parameters.Add(new SqlParameter("cmnd", SqlDbType.NVarChar)).Value = cmnd;
+
+                comd.Parameters.Add(new SqlParameter("malop", SqlDbType.NVarChar)).Value = malop;
+                comd.Parameters.Add(new SqlParameter("diachi", SqlDbType.NVarChar)).Value = diachi;
+                comd.Parameters.Add(new SqlParameter("email", SqlDbType.NVarChar)).Value = email;
+                comd.Parameters.Add(new SqlParameter("sdt", SqlDbType.NVarChar)).Value = sdt;
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         private void button4_Click(object sender, EventArgs e)
         {
-        
+
+            string gt = "";
+            if (rbdNam.Checked == true)
+            { gt = "Nam"; }
+            else if(rbdNu.Checked==true)
+            { gt = "Nu"; }
+            themND(txtMa.Text, txtTen.Text, gt, dtpNgaysinh.Text, txtCMND.Text, cbbMalop.Text, txtDiachi.Text, txtEmail.Text, txtDienthoai.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Them Thanh Cong");
+            LoadData();
+
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -85,7 +128,18 @@ namespace QLTV
 
         private void button2_Click(object sender, EventArgs e)
         {
-            LoadData();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtMa.Clear();
+            txtTen.Clear();        
+            txtCMND.Clear();            
+            txtDiachi.Clear();            
+            txtDienthoai.Clear();            
+            txtEmail.Clear();            
+            
         }
     }
 }
