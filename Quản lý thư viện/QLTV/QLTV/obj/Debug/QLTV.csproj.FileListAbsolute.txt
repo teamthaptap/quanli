@@ -34,3 +34,6 @@ C:\Users\KN\Documents\GitHub\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\Q
 C:\Users\KN\Documents\GitHub\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\QLTV.ControlDausach.resources
 C:\Users\KN\Documents\GitHub\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\QLTV.TheloaiControl.resources
 C:\Users\KN\Documents\GitHub\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\QLTV.csproj.GenerateResource.Cache
+C:\Users\thaop\Documents\quanli\Quản lý thư viện\QLTV\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\thaop\Documents\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\QLTV.exe
+C:\Users\thaop\Documents\quanli\Quản lý thư viện\QLTV\QLTV\obj\Debug\QLTV.pdb
