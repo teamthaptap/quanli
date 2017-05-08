@@ -226,6 +226,7 @@
             this.btSua.TabIndex = 86;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btCapnhat
             // 
@@ -245,6 +246,7 @@
             this.btXoa.TabIndex = 85;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // LopControl
             // 

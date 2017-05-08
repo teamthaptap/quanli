@@ -35,7 +35,50 @@ namespace QLTV
 
         private void btThem_Click(object sender, EventArgs e)
         {
+            try
+            {
+                string MaLop = txtMa.Text.Trim();
+                string TenLop = txtTen.Text.Trim();
+                string Khoa = txtKhoa.Text.Trim();
+                SqlHelper.ExecuteDataset(QLTV.Class.StrConnect.strConnect(), "Lop_Insert", MaLop, TenLop, Khoa);
+                loaddulieu();
+            }
+            catch (Exception)
+            {
 
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string MaLop = txtMa.Text.Trim();
+                string TenLop = txtTen.Text.Trim();
+                string Khoa = txtKhoa.Text.Trim();
+                SqlHelper.ExecuteDataset(QLTV.Class.StrConnect.strConnect(), "Lop_Update", MaLop, TenLop, Khoa);
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaLop = txtMa.Text.Trim();
+               
+                SqlHelper.ExecuteDataset(QLTV.Class.StrConnect.strConnect(), "Lop_Delete", MaLop);
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+
+            }
         }
     }
 }
