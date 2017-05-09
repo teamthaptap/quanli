@@ -13,7 +13,10 @@ namespace formDangNhap
 {
     public partial class DichVu : Form
     {
-        string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        string strConnect = @"Data Source = DESKTOP-6JMV3J1\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        //string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        //string strConnect = @"Data Source=KN-PC\KN;Initial Catalog=QL_KhachSan;Integrated Security=True";
+
         public DichVu()
         {
             InitializeComponent();
@@ -32,12 +35,6 @@ namespace formDangNhap
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
             try
             {
                 string Madv = txtMadv.Text.Trim();
@@ -51,12 +48,36 @@ namespace formDangNhap
             {
                 MessageBox.Show("Thêm Lỗi");
             }
-            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormMain fm = new FormMain();
+            fm.Show();
+            this.Hide();
+
         }
 
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             LoadDichVu();
+        }
+
+        private void DichVu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaDV = txtMadv.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strConnect, "Delete_Dichvu", MaDV);
+                LoadDichVu();
+            }
+            catch (Exception) { }
         }
     }
 }

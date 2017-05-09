@@ -15,8 +15,9 @@ namespace formDangNhap
         static void Main()
         {
             Application.EnableVisualStyles();
+
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ThemKhachThuePhong());
+            Application.Run(new form1());
         }
     }
 }

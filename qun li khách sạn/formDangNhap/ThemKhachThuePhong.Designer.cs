@@ -30,11 +30,9 @@
         {
             this.dtpNgaysinh = new System.Windows.Forms.DateTimePicker();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
-            this.TxtNguoiLap = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaKH = new System.Windows.Forms.TextBox();
@@ -52,17 +50,10 @@
             // 
             // txtGioiTinh
             // 
-            this.txtGioiTinh.Location = new System.Drawing.Point(70, 239);
+            this.txtGioiTinh.Location = new System.Drawing.Point(70, 117);
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(197, 20);
             this.txtGioiTinh.TabIndex = 37;
-            // 
-            // TxtNguoiLap
-            // 
-            this.TxtNguoiLap.Location = new System.Drawing.Point(70, 120);
-            this.TxtNguoiLap.Name = "TxtNguoiLap";
-            this.TxtNguoiLap.Size = new System.Drawing.Size(197, 20);
-            this.TxtNguoiLap.TabIndex = 36;
             // 
             // txtTenKH
             // 
@@ -74,7 +65,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 242);
+            this.label5.Location = new System.Drawing.Point(12, 120);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 34;
@@ -88,15 +79,6 @@
             this.label4.Size = new System.Drawing.Size(54, 13);
             this.label4.TabIndex = 33;
             this.label4.Text = "Ngày sinh";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 120);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(22, 13);
-            this.label3.TabIndex = 32;
-            this.label3.Text = "GT";
             // 
             // label2
             // 
@@ -162,11 +144,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dtpNgaysinh);
             this.Controls.Add(this.txtGioiTinh);
-            this.Controls.Add(this.TxtNguoiLap);
             this.Controls.Add(this.txtTenKH);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMaKH);
@@ -181,11 +161,9 @@
 
         private System.Windows.Forms.DateTimePicker dtpNgaysinh;
         private System.Windows.Forms.TextBox txtGioiTinh;
-        private System.Windows.Forms.TextBox TxtNguoiLap;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtMaKH;

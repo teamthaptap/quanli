@@ -128,5 +128,10 @@ namespace formDangNhap
             this.Hide();
             thd.Show();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

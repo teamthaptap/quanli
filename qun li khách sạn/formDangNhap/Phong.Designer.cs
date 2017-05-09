@@ -43,6 +43,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
+            this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TingTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtGiaPhong = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +60,7 @@
             this.btnCapNhat.TabIndex = 34;
             this.btnCapNhat.Text = "Cập nhật";
             this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.btnCapNhat_Click);
             // 
             // btnXoa
             // 
@@ -64,6 +70,7 @@
             this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -73,6 +80,7 @@
             this.btnSua.TabIndex = 32;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThem
             // 
@@ -174,10 +182,47 @@
             // dgvHienThi
             // 
             this.dgvHienThi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHienThi.Location = new System.Drawing.Point(1, 3);
+            this.dgvHienThi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaPhong,
+            this.TenPhong,
+            this.LoaiPhong,
+            this.TingTrang,
+            this.GiaPhong});
+            this.dgvHienThi.Location = new System.Drawing.Point(1, 11);
             this.dgvHienThi.Name = "dgvHienThi";
             this.dgvHienThi.Size = new System.Drawing.Size(515, 306);
             this.dgvHienThi.TabIndex = 19;
+            this.dgvHienThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienThi_CellContentClick);
+            // 
+            // MaPhong
+            // 
+            this.MaPhong.DataPropertyName = "MaPhong";
+            this.MaPhong.HeaderText = "Mã Phòng";
+            this.MaPhong.Name = "MaPhong";
+            // 
+            // TenPhong
+            // 
+            this.TenPhong.DataPropertyName = "TenPhong";
+            this.TenPhong.HeaderText = "Tên Phòng";
+            this.TenPhong.Name = "TenPhong";
+            // 
+            // LoaiPhong
+            // 
+            this.LoaiPhong.DataPropertyName = "LoaiPhong";
+            this.LoaiPhong.HeaderText = "Loại Phòng";
+            this.LoaiPhong.Name = "LoaiPhong";
+            // 
+            // TingTrang
+            // 
+            this.TingTrang.DataPropertyName = "TinhTrang";
+            this.TingTrang.HeaderText = "Tình Trạng";
+            this.TingTrang.Name = "TingTrang";
+            // 
+            // GiaPhong
+            // 
+            this.GiaPhong.DataPropertyName = "GiaPhong";
+            this.GiaPhong.HeaderText = "Giá Phòng";
+            this.GiaPhong.Name = "GiaPhong";
             // 
             // txtGiaPhong
             // 
@@ -210,6 +255,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "Phong";
             this.Text = "Phòng";
+            this.Load += new System.EventHandler(this.Phong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -234,5 +280,10 @@
         private System.Windows.Forms.TextBox txtMaPhong;
         private System.Windows.Forms.DataGridView dgvHienThi;
         private System.Windows.Forms.TextBox txtGiaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LoaiPhong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TingTrang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn GiaPhong;
     }
 }

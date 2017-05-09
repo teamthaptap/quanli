@@ -8,8 +8,8 @@ namespace formDangNhap
 {
     public partial class DoDungTrongPhong : Form
     {
-        string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
-
+        //string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        string strConnect = @"Data Source=KN-PC\KN;Initial Catalog=QL_KhachSan;Integrated Security=True";
         public DoDungTrongPhong()
         {
             InitializeComponent();
@@ -81,6 +81,21 @@ namespace formDangNhap
             cbb3.DataSource = dtdd;
             cbb3.ValueMember = "DonViTinh";
             cbb3.DisplayMember = "DonViTinh";
+        }
+
+        private void DoDungTrongPhong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DoDungTrongPhong_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+           
         }
     }
 }

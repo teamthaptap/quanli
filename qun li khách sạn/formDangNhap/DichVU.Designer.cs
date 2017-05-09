@@ -63,6 +63,7 @@
             this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -187,6 +188,7 @@
             this.Controls.Add(this.dgvHienThi);
             this.Name = "DichVu";
             this.Text = "Dịch vụ";
+            this.Load += new System.EventHandler(this.DichVu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

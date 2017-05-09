@@ -33,10 +33,9 @@ namespace formDangNhap
             {
                 string makh = txtMaKH.Text.Trim();
                 string tenkh = txtTenKH.Text.Trim();
-                string gt = TxtNguoiLap.Text.Trim();
                 DateTime ngaysinh = DateTime.Parse(dtpNgaysinh.Value.ToString());
                 string gioitinh = txtGioiTinh.Text.Trim();
-                SqlHelper.ExecuteNonQuery(strConnect,"ADDKhachThuePhong",makh,tenkh,gt,ngaysinh,gioitinh);
+                SqlHelper.ExecuteNonQuery(strConnect,"ADDKhachThuePhong",makh,tenkh,ngaysinh,gioitinh);
                 MessageBox.Show("thành công");
             }
             catch(Exception )
