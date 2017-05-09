@@ -1,0 +1,62 @@
+﻿using Microsoft.ApplicationBlocks.Data;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace formDangNhap
+{
+    public partial class DichVu : Form
+    {
+        string strConnect = @"Data Source = PHAMTUNG\SQLEXPRESS;Initial Catalog = QL_KhachSan; Integrated Security = True";
+        public DichVu()
+        {
+            InitializeComponent();
+            Load += DichVuLoad;
+        }
+
+        private void DichVuLoad(object sender, EventArgs e)
+        {
+            LoadDichVu();
+        }
+
+        private void LoadDichVu()
+        {
+            dgvHienThi.DataSource = SqlHelper.ExecuteDataset(strConnect, "Load_Dichvu").Tables[0];
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string Madv = txtMadv.Text.Trim();
+                string Tendv = txtTendv.Text.Trim();
+                string Gia = txtGia.Text.Trim();
+                string DVT = txtDVT.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strConnect, "Insert_Dichvu", Madv, Tendv, Gia, DVT);
+                MessageBox.Show("Thêm thành công", "THông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Thêm Lỗi");
+            }
+            
+        }
+
+        private void btnCapNhat_Click(object sender, EventArgs e)
+        {
+            LoadDichVu();
+        }
+    }
+}
