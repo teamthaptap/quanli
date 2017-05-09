@@ -12,8 +12,8 @@ namespace QLTV.Class
         public static string strConnect()
         {
             // string strConnect = @"Data Source=PHAMTUNG\SQLEXPRESS;Initial Catalog=QL_ThuVien;Integrated Security=True";
-            //string strConnect = @" Data Source=KN-PC\KN;Initial Catalog=QL_ThuVien;Integrated Security=True";
-            string strConnect = @"Data Source=LATITUDE-PC;Initial Catalog=QL_ThuVien;Integrated Security=True";
+            string strConnect = @" Data Source=KN-PC\KN;Initial Catalog=QL_ThuVien;Integrated Security=True";
+            //string strConnect = @"Data Source=LATITUDE-PC;Initial Catalog=QL_ThuVien;Integrated Security=True";
             return strConnect;
         }
         

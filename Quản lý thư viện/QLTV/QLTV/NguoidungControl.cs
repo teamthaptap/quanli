@@ -106,6 +106,62 @@ namespace QLTV
                 con.Close();
             }
         }
+        public void suaND(string ma, string ten, string gioitinh, string ngaysinh, string cmnd, string malop, string diachi, string email, string sdt)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "sua_ND";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("mand", SqlDbType.NVarChar)).Value = ma;
+                comd.Parameters.Add(new SqlParameter("tennd", SqlDbType.NVarChar)).Value = ten;
+                comd.Parameters.Add(new SqlParameter("gioitinhnd", SqlDbType.NVarChar)).Value = gioitinh;
+                comd.Parameters.Add(new SqlParameter("ngaysinnhnd", SqlDbType.Date)).Value = ngaysinh;
+                comd.Parameters.Add(new SqlParameter("cmndnd", SqlDbType.NVarChar)).Value = cmnd;
+
+                comd.Parameters.Add(new SqlParameter("malopnd", SqlDbType.NVarChar)).Value = malop;
+                comd.Parameters.Add(new SqlParameter("diachind", SqlDbType.NVarChar)).Value = diachi;
+                comd.Parameters.Add(new SqlParameter("emailnd", SqlDbType.NVarChar)).Value = email;
+                comd.Parameters.Add(new SqlParameter("sdtnd", SqlDbType.NVarChar)).Value = sdt;
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public void xoaND(string ma)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "xoa_ND";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("mabd", SqlDbType.NVarChar)).Value = ma;
+             
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
         private void button4_Click(object sender, EventArgs e)
         {
 
@@ -128,7 +184,15 @@ namespace QLTV
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            string gt = "";
+            if (rbdNam.Checked == true)
+            { gt = "Nam"; }
+            else if (rbdNu.Checked == true)
+            { gt = "Nu"; }
+            suaND(txtMa.Text, txtTen.Text, gt, dtpNgaysinh.Text, txtCMND.Text, cbbMalop.Text, txtDiachi.Text, txtEmail.Text, txtDienthoai.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Sua Thanh Cong");
+            LoadData();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -140,6 +204,15 @@ namespace QLTV
             txtDienthoai.Clear();            
             txtEmail.Clear();            
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            xoaND(txtMa.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Them Thanh Cong");
+            LoadData();
+
         }
     }
 }
