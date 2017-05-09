@@ -109,5 +109,22 @@ namespace formDangNhap
         {
             LoadDaTa();
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMadd.Text.Trim();
+               
+                SqlHelper.ExecuteNonQuery(strConnect, "Delete_Dodung", ma);
+                MessageBox.Show("Xoá thành công", "THông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                LoadDodung();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Chưa thể xóa!");
+            }
+
+        }
     }
 }

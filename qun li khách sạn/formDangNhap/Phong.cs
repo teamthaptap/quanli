@@ -132,5 +132,10 @@ namespace formDangNhap
             LoadData();
 
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

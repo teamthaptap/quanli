@@ -32,5 +32,58 @@ namespace QLTV
         {
             loaddulieu();
         }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaNXB = txtMa.Text.Trim();
+                string TenNXB = txtTen.Text.Trim();
+                string QuocGia = txtQuocgia.Text.Trim();
+                string Email = txtEmail.Text.Trim();
+                string DiaChi = txtDiachi.Text.Trim();
+                string DienThoai = txtDienthoai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "NXB_Insert", MaNXB, TenNXB, QuocGia, Email, DiaChi, DienThoai);
+                loaddulieu();
+
+
+            }
+            catch(Exception) {
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaNXB = txtMa.Text.Trim();
+                string TenNXB = txtTen.Text.Trim();
+                string QuocGia = txtQuocgia.Text.Trim();
+                string Email = txtEmail.Text.Trim();
+                string DiaChi = txtDiachi.Text.Trim();
+                string DienThoai = txtDienthoai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "NXB_Update", MaNXB, TenNXB, QuocGia, Email, DiaChi, DienThoai);
+                loaddulieu();
+
+
+            }
+            catch (Exception)
+            {
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaNXB = txtMa.Text.Trim();
+                SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "NXB_Delete", MaNXB);
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+
+            }
+        }
     }
 }
