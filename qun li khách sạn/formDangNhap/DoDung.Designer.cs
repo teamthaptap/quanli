@@ -43,12 +43,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMadd = new System.Windows.Forms.TextBox();
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
-            this.txtGiamua = new System.Windows.Forms.TextBox();
             this.MaDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DonViTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaMua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtGiamua = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -193,13 +194,6 @@
             this.dgvHienThi.TabIndex = 19;
             this.dgvHienThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienThi_CellContentClick);
             // 
-            // txtGiamua
-            // 
-            this.txtGiamua.Location = new System.Drawing.Point(606, 116);
-            this.txtGiamua.Name = "txtGiamua";
-            this.txtGiamua.Size = new System.Drawing.Size(197, 20);
-            this.txtGiamua.TabIndex = 35;
-            // 
             // MaDD
             // 
             this.MaDD.DataPropertyName = "MaDD";
@@ -234,6 +228,13 @@
             this.GiaMua.HeaderText = "Gia Mua";
             this.GiaMua.Name = "GiaMua";
             this.GiaMua.ReadOnly = true;
+            // 
+            // txtGiamua
+            // 
+            this.txtGiamua.Location = new System.Drawing.Point(606, 116);
+            this.txtGiamua.Name = "txtGiamua";
+            this.txtGiamua.Size = new System.Drawing.Size(197, 20);
+            this.txtGiamua.TabIndex = 35;
             // 
             // DoDung
             // 

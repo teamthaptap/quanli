@@ -43,12 +43,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaPhong = new System.Windows.Forms.TextBox();
             this.dgvHienThi = new System.Windows.Forms.DataGridView();
-            this.txtGiaPhong = new System.Windows.Forms.TextBox();
             this.MaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TingTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GiaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtGiaPhong = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienThi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.btnXoa.TabIndex = 33;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -193,14 +194,6 @@
             this.dgvHienThi.TabIndex = 19;
             this.dgvHienThi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienThi_CellContentClick);
             // 
-            // txtGiaPhong
-            // 
-            this.txtGiaPhong.Enabled = false;
-            this.txtGiaPhong.Location = new System.Drawing.Point(595, 245);
-            this.txtGiaPhong.Name = "txtGiaPhong";
-            this.txtGiaPhong.Size = new System.Drawing.Size(197, 20);
-            this.txtGiaPhong.TabIndex = 35;
-            // 
             // MaPhong
             // 
             this.MaPhong.DataPropertyName = "MaPhong";
@@ -230,6 +223,14 @@
             this.GiaPhong.DataPropertyName = "GiaPhong";
             this.GiaPhong.HeaderText = "Giá Phòng";
             this.GiaPhong.Name = "GiaPhong";
+            // 
+            // txtGiaPhong
+            // 
+            this.txtGiaPhong.Enabled = false;
+            this.txtGiaPhong.Location = new System.Drawing.Point(595, 245);
+            this.txtGiaPhong.Name = "txtGiaPhong";
+            this.txtGiaPhong.Size = new System.Drawing.Size(197, 20);
+            this.txtGiaPhong.TabIndex = 35;
             // 
             // Phong
             // 
