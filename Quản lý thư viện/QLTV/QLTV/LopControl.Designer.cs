@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvHienthi = new System.Windows.Forms.DataGridView();
+            this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -43,9 +46,6 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btCapnhat = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
-            this.MaLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLop = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Khoa = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHienthi)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -68,6 +68,24 @@
             this.dgvHienthi.Name = "dgvHienthi";
             this.dgvHienthi.Size = new System.Drawing.Size(714, 145);
             this.dgvHienthi.TabIndex = 0;
+            // 
+            // MaLop
+            // 
+            this.MaLop.DataPropertyName = "MaLop";
+            this.MaLop.HeaderText = "Mã lớp";
+            this.MaLop.Name = "MaLop";
+            // 
+            // TenLop
+            // 
+            this.TenLop.DataPropertyName = "TenLop";
+            this.TenLop.HeaderText = "Tên lớp";
+            this.TenLop.Name = "TenLop";
+            // 
+            // Khoa
+            // 
+            this.Khoa.DataPropertyName = "Khoa";
+            this.Khoa.HeaderText = "Khoa";
+            this.Khoa.Name = "Khoa";
             // 
             // groupBox1
             // 
@@ -198,6 +216,7 @@
             this.btThem.TabIndex = 84;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -207,6 +226,7 @@
             this.btSua.TabIndex = 86;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btCapnhat
             // 
@@ -226,24 +246,7 @@
             this.btXoa.TabIndex = 85;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
-            // 
-            // MaLop
-            // 
-            this.MaLop.DataPropertyName = "MaLop";
-            this.MaLop.HeaderText = "Mã lớp";
-            this.MaLop.Name = "MaLop";
-            // 
-            // TenLop
-            // 
-            this.TenLop.DataPropertyName = "TenLop";
-            this.TenLop.HeaderText = "Tên lớp";
-            this.TenLop.Name = "TenLop";
-            // 
-            // Khoa
-            // 
-            this.Khoa.DataPropertyName = "Khoa";
-            this.Khoa.HeaderText = "Khoa";
-            this.Khoa.Name = "Khoa";
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // LopControl
             // 

@@ -32,5 +32,10 @@ namespace QLTV
         {
             loaddulieu();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
