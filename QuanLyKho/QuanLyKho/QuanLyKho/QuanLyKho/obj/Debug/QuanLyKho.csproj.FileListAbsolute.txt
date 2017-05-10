@@ -1,0 +1,51 @@
+F:\Web\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe.config
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormBaoCao.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormHoaDonNhap.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormKhachHang.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormMain.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormNhapHang.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormThemHangHoa.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormXuatHang.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Properties.Resources.resources
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+F:\Web\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe
+F:\Web\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.pdb
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
+F:\Web\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormPhieuNhap.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe.config
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.pdb
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormBaoCao.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormHoaDonNhap.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormKhachHang.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormMain.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormNhapHang.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormPhieuNhap.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormThemHangHoa.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormXuatHang.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Properties.Resources.resources
+C:\Users\LA THANH\Desktop\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe.config
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.exe
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.pdb
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.exe
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\bin\Debug\QuanLyKho.pdb
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csprojResolveAssemblyReference.cache
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormBaoCao.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormKhoHang.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormHoaDonNhap.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormKhachHang.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormLogin.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormMain.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormNhapHang.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormPhieuNhap.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormPhieuXuat.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormThemHangHoa.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.FormXuatHang.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.Properties.Resources.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLyKho\QuanLyKho\QuanLyKho\QuanLyKho\obj\Debug\QuanLyKho.csproj.GenerateResource.Cache
