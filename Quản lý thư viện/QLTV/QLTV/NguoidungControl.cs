@@ -164,17 +164,37 @@ namespace QLTV
         }
         private void button4_Click(object sender, EventArgs e)
         {
-
+            bool kiemtranhaplieu = true;
+            if (txtMa.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Mã Nhân Viên");
+                kiemtranhaplieu = false;
+                txtMa.Focus();
+            }
+            else if (txtTen.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Tên Nhân Viên");
+                kiemtranhaplieu = false;
+                txtTen.Focus();
+            }
+            
+            
             string gt = "";
             if (rbdNam.Checked == true)
             { gt = "Nam"; }
             else if(rbdNu.Checked==true)
             { gt = "Nu"; }
-            themND(txtMa.Text, txtTen.Text, gt, dtpNgaysinh.Text, txtCMND.Text, cbbMalop.Text, txtDiachi.Text, txtEmail.Text, txtDienthoai.Text);
-            KetNoiCSDL();
-            MessageBox.Show("Them Thanh Cong");
-            LoadData();
-
+            if (kiemtranhaplieu == true)
+            { themND(txtMa.Text, txtTen.Text, gt, dtpNgaysinh.Text, txtCMND.Text, cbbMalop.Text, txtDiachi.Text, txtEmail.Text, txtDienthoai.Text);
+                KetNoiCSDL();
+                MessageBox.Show("Them Thanh Cong");
+                LoadData();
+            }
+           
+          
+            txtMa.Enabled = false;
+            btnSua.Enabled = true;
+            btnXoa.Enabled = true;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)
@@ -184,6 +204,7 @@ namespace QLTV
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             string gt = "";
             if (rbdNam.Checked == true)
             { gt = "Nam"; }
@@ -202,7 +223,12 @@ namespace QLTV
             txtCMND.Clear();            
             txtDiachi.Clear();            
             txtDienthoai.Clear();            
-            txtEmail.Clear();            
+            txtEmail.Clear();
+            txtMa.Enabled = true;
+           
+            btnSua.Enabled = false;
+            btnXoa.Enabled = false;
+            
             
         }
 
@@ -210,7 +236,7 @@ namespace QLTV
         {
             xoaND(txtMa.Text);
             KetNoiCSDL();
-            MessageBox.Show("Them Thanh Cong");
+            MessageBox.Show("Xoa Thanh Cong");
             LoadData();
 
         }

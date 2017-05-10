@@ -49,10 +49,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.rbdNam = new System.Windows.Forms.RadioButton();
             this.rbdNu = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnCapNhap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHienthi = new System.Windows.Forms.DataGridView();
@@ -134,10 +134,10 @@
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.rbdNam, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.rbdNu, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnThem, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSua, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnXoa, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnCapNhap, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
@@ -170,6 +170,7 @@
             // 
             // txtMa
             // 
+            this.txtMa.Enabled = false;
             this.txtMa.Location = new System.Drawing.Point(94, 3);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(200, 20);
@@ -303,45 +304,45 @@
             this.rbdNu.Text = "Nữ";
             this.rbdNu.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Location = new System.Drawing.Point(649, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
-            this.button1.TabIndex = 83;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThem.Location = new System.Drawing.Point(649, 3);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 22);
+            this.btnThem.TabIndex = 83;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.Location = new System.Drawing.Point(649, 35);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 22);
-            this.button2.TabIndex = 84;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnSua.Location = new System.Drawing.Point(649, 35);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 22);
+            this.btnSua.TabIndex = 84;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.button2_Click);
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Location = new System.Drawing.Point(649, 67);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 22);
-            this.button3.TabIndex = 85;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnXoa.Location = new System.Drawing.Point(649, 67);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 22);
+            this.btnXoa.TabIndex = 85;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // btnCapNhap
             // 
-            this.button4.Location = new System.Drawing.Point(649, 99);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 22);
-            this.button4.TabIndex = 86;
-            this.button4.Text = "Cập Nhật";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnCapNhap.Location = new System.Drawing.Point(649, 99);
+            this.btnCapNhap.Name = "btnCapNhap";
+            this.btnCapNhap.Size = new System.Drawing.Size(75, 22);
+            this.btnCapNhap.TabIndex = 86;
+            this.btnCapNhap.Text = "Cập Nhật";
+            this.btnCapNhap.UseVisualStyleBackColor = true;
+            this.btnCapNhap.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -464,9 +465,9 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCapNhap;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.TextBox txtCMND;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtMa;
@@ -486,7 +487,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.RadioButton rbdNam;
         private System.Windows.Forms.RadioButton rbdNu;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHienthi;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBD;
