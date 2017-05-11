@@ -43,7 +43,7 @@
                     }
                     @if (@Model.Translator_Id != null)
                     {
-                        <h4>Dịch giả :<a> @Model.Translator.Name</a></h4>
+                        <h4>Dịch giả :<a href="@Url.Action("SachTheoTacGia","Auth", new {@au_id = Model.Auth_Id })"> @Model.Translator.Name</a></h4>
                     }
                     @if (@Model.Publisher_Id != null)
                     {

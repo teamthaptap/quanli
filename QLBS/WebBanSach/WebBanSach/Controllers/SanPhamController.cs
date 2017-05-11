@@ -27,7 +27,7 @@ namespace WebBanSach.Controllers
         [ChildActionOnly]
         public PartialViewResult SachBanChayPartial()
         {          
-              return PartialView(db.Books.Take(4).ToList());
+              return PartialView(db.Books.Take(4).OrderBy(x => x.Order).ToList());
         }
         [HttpGet]
         public ViewResult Create()

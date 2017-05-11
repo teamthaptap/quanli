@@ -13,7 +13,7 @@ namespace WebBanSach.Controllers
         // GET: TheLoai
         public ActionResult TheLoaiPartial()
         {
-            return PartialView(db.Books.Where(x=>x.GroupBook_Id == "GB0002").Take(4).ToList());
+            return PartialView(db.Books.Where(x=>x.GroupBook_Id == "GB0002").Take(4).OrderBy(x=>x.PriceNew).ToList());
         }
         public ViewResult SachTheoTheLoai(string GroupBookId = "0")
         {

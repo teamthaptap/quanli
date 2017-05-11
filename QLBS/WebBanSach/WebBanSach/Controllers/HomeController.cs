@@ -15,7 +15,7 @@ namespace WebBanSach.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            return View(db.Books.Take(4).ToList());
+            return View();
         }
        [ChildActionOnly]
         public ActionResult TopMenuPartial(string MenuId)

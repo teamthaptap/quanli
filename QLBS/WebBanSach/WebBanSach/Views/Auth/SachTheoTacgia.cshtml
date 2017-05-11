@@ -1,9 +1,16 @@
-﻿@using WebBanSach.Models;
+﻿@using WebBanSach.Models
 @model List<Book>
+@{
+    ViewBag.Title = "SachTheoTheLoai";
+    Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
+}
+
+@*Hiển thị danh sách theo Thể loại*@
 <div class="content-top ">
     <div class="container ">
         <div class="spec ">
-            <h3>Sách Bán Chạy</h3>
+            <h3>@ViewBag.AuthName</h3>
+            <h5>@ViewBag.AuthContent</h5>
             <div class="ser-t">
                 <b></b>
                 <span><i></i></span>
@@ -21,6 +28,7 @@
                         </a>
                         <div class="mid-1">
                             <div class="women">
+                                @*<h6><a href="~/">@item.Name</a></h6>*@
                                 @if (@item.Name.Length > 25)
                                 {
                                     <h6><a href="@Url.Action("XemChiTiet","SanPham", new {@BookId = @item.Id })">@item.Name.Substring(0, 25)...</a></h6>
@@ -32,7 +40,6 @@
                             </div>
                             <div class="mid-2">
                                 <p><label>@item.Price VNĐ</label><em class="item_price">@item.PriceNew VNĐ</em></p>
-
 
                             </div>
                             <div class="clearfix"></div>
@@ -52,4 +59,3 @@
         }
     </div>
 </div>
-

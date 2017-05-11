@@ -169,6 +169,7 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
@@ -314,11 +315,12 @@
     <Content Include="Views\Home\Register.cshtml" />
     <Content Include="Views\TheLoai\TheLoaiPartial.cshtml" />
     <Content Include="Views\SanPham\Create.cshtml" />
+    <Content Include="Views\Auth\SachTheoTacgia.cshtml" />
+    <Content Include="Views\Auth\TacgiaPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\Ennities\" />
-    <Folder Include="Views\NXB\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
