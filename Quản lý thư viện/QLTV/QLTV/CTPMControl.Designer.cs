@@ -38,10 +38,10 @@
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnCapNhat = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.cbbPhieu = new System.Windows.Forms.ComboBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -51,7 +51,7 @@
             this.dtpNgaymuon = new System.Windows.Forms.DateTimePicker();
             this.dtpNgaytra = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.dtpHantra = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -148,43 +148,45 @@
             this.label1.TabIndex = 88;
             this.label1.Text = "Mã phiếu mượn :";
             // 
-            // button1
+            // btnThem
             // 
-            this.button1.Location = new System.Drawing.Point(636, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 22);
-            this.button1.TabIndex = 83;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnThem.Location = new System.Drawing.Point(636, 3);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(75, 22);
+            this.btnThem.TabIndex = 83;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.Location = new System.Drawing.Point(636, 36);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 22);
-            this.button2.TabIndex = 84;
-            this.button2.Text = "Sửa";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSua.Location = new System.Drawing.Point(636, 36);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(75, 22);
+            this.btnSua.TabIndex = 84;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // button3
+            // btnXoa
             // 
-            this.button3.Location = new System.Drawing.Point(636, 69);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 22);
-            this.button3.TabIndex = 85;
-            this.button3.Text = "Xóa";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnXoa.Location = new System.Drawing.Point(636, 69);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 22);
+            this.btnXoa.TabIndex = 85;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button4
+            // btnCapNhat
             // 
-            this.button4.Location = new System.Drawing.Point(636, 102);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 22);
-            this.button4.TabIndex = 86;
-            this.button4.Text = "Cập Nhật";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnCapNhat.Location = new System.Drawing.Point(636, 102);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(75, 22);
+            this.btnCapNhat.TabIndex = 86;
+            this.btnCapNhat.Text = "Cập Nhật";
+            this.btnCapNhat.UseVisualStyleBackColor = true;
+            this.btnCapNhat.Click += new System.EventHandler(this.button4_Click);
             // 
             // label6
             // 
@@ -197,6 +199,7 @@
             // 
             // cbbPhieu
             // 
+            this.cbbPhieu.Enabled = false;
             this.cbbPhieu.FormattingEnabled = true;
             this.cbbPhieu.Location = new System.Drawing.Point(92, 3);
             this.cbbPhieu.Name = "cbbPhieu";
@@ -228,10 +231,10 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
             this.tableLayoutPanel1.Controls.Add(this.label5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button1, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 5, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnThem, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btnSua, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnXoa, 5, 2);
+            this.tableLayoutPanel1.Controls.Add(this.btnCapNhat, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.cbbPhieu, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.cbbSach, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
@@ -239,7 +242,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dtpNgaymuon, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.dtpNgaytra, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtGhiChu, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.dtpHantra, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -256,6 +259,7 @@
             // 
             // cbbSach
             // 
+            this.cbbSach.Enabled = false;
             this.cbbSach.FormattingEnabled = true;
             this.cbbSach.Location = new System.Drawing.Point(92, 36);
             this.cbbSach.Name = "cbbSach";
@@ -294,13 +298,14 @@
             this.label3.TabIndex = 111;
             this.label3.Text = "Hạn trả :";
             // 
-            // textBox1
+            // txtGhiChu
             // 
-            this.textBox1.Location = new System.Drawing.Point(390, 69);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 27);
-            this.textBox1.TabIndex = 112;
+            this.txtGhiChu.Location = new System.Drawing.Point(390, 69);
+            this.txtGhiChu.Multiline = true;
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(203, 27);
+            this.txtGhiChu.TabIndex = 112;
+            this.txtGhiChu.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // dtpHantra
             // 
@@ -362,10 +367,10 @@
         private System.Windows.Forms.DataGridView dgvHienthi;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnThem;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox cbbPhieu;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -376,7 +381,7 @@
         private System.Windows.Forms.DateTimePicker dtpNgaymuon;
         private System.Windows.Forms.DateTimePicker dtpNgaytra;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.DateTimePicker dtpHantra;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPM;
