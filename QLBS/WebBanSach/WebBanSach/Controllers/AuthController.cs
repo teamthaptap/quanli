@@ -9,7 +9,7 @@ namespace WebBanSach.Controllers
 {
     public class AuthController : Controller
     {
-        QLBS db = new QLBS();
+        QLBS125 db = new QLBS125();
         // GET: Auth
         public ActionResult SachTheoTacgia(string AuthId = "0")
         {

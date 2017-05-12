@@ -11,21 +11,21 @@ namespace WebBanSach.Controllers
 {
     public class HomeController : Controller
     {
-        QLBS db = new QLBS();
+        QLBS125 db = new QLBS125();
         // GET: Home
         public ActionResult Index()
         {
             return View();
         }
        [ChildActionOnly]
-        public ActionResult TopMenuPartial(string MenuId)
+        public ActionResult TopMenuPartial()
         {
-            return PartialView(db.Menus.Where(x=>x.ParentId== MenuId).ToList());
+            return PartialView(db.Menus.Where(x=> x.ParentId=="Menu00").ToList());
         }
 
         public ActionResult Wishlish()
         {
-            return View();
+            return View(db.Books.Where(x=>x.GroupBook_Id=="GB0001").Take(3).ToList());
         }
         [HttpGet]
         public ActionResult Login()

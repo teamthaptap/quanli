@@ -9,7 +9,7 @@ namespace WebBanSach.Controllers
 {
     public class TheLoaiController : Controller
     {
-        QLBS db = new QLBS();
+        QLBS125 db = new QLBS125();
         // GET: TheLoai
         public ActionResult TheLoaiPartial()
         {

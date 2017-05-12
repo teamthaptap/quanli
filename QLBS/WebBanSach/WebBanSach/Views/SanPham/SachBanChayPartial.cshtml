@@ -21,7 +21,7 @@
                         </a>
                         <div class="mid-1">
                             <div class="women">
-                                @if (@item.Name.Length > 25)
+                                @if (@item.Name.Length > 20)
                                 {
                                     <h6><a href="@Url.Action("XemChiTiet","SanPham", new {@BookId = @item.Id })">@item.Name.Substring(0, 25)...</a></h6>
                                 }

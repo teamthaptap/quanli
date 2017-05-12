@@ -5,10 +5,10 @@ namespace WebBanSach.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class QLBS : DbContext
+    public partial class QLBS125 : DbContext
     {
-        public QLBS()
-            : base("name=QLBS2")
+        public QLBS125()
+            : base("name=QLBS125")
         {
         }
 

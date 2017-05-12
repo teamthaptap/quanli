@@ -9,7 +9,7 @@ namespace WebBanSach.Controllers
 {
     public class SanPhamController : Controller
     {
-        QLBS db = new QLBS();
+        QLBS125 db = new QLBS125();
         // GET: SanPham
 
         public ViewResult XemChiTiet(string BookID="0")
@@ -27,7 +27,7 @@ namespace WebBanSach.Controllers
         [ChildActionOnly]
         public PartialViewResult SachBanChayPartial()
         {          
-              return PartialView(db.Books.Take(4).OrderBy(x => x.Order).ToList());
+              return PartialView(db.Books.Take(4).OrderBy(x => x.GroupBook_Id).ToList());
         }
         [HttpGet]
         public ViewResult Create()
