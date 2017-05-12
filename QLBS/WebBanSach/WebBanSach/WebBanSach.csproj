@@ -171,6 +171,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\NXBController.cs" />
     <Compile Include="Controllers\SanPhamController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
     <Compile Include="Global.asax.cs">
@@ -322,6 +323,8 @@
     <Content Include="Views\SanPham\Create.cshtml" />
     <Content Include="Views\Auth\SachTheoTacgia.cshtml" />
     <Content Include="Views\Auth\TacgiaPartial.cshtml" />
+    <Content Include="Views\NXB\SachTheoNXB.cshtml" />
+    <Content Include="Views\NXB\NXBPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

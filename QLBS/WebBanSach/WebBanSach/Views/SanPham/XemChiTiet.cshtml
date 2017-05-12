@@ -39,18 +39,18 @@
                     }
                     @if (Model.Auth_Id != null)
                     {
-                        <h4>Tác giả :<a> @Model.Auth.Name</a></h4>
+                        <h4>Tác giả :<a href="@Url.Action("SachTheoTacgia","Auth", new {@AuthId = Model.Auth_Id })"> @Model.Auth.Name</a></h4>
                     }
                     @if (@Model.Translator_Id != null)
                     {
-                        <h4>Dịch giả :<a href="@Url.Action("SachTheoTacGia","Auth", new {@au_id = Model.Auth_Id })"> @Model.Translator.Name</a></h4>
+                        <h4>Dịch giả :<a> @Model.Translator.Name</a></h4>
                     }
                     @if (@Model.Publisher_Id != null)
                     {
-                        <h4>Nhà xuất bản :<a> @Model.Publisher.Name</a></h4>}
+                        <h4>Nhà xuất bản :<a href="@Url.Action("SachTheoNXB","NXB", new {@PublisherId = Model.Publisher_Id })"> @Model.Publisher.Name</a></h4>}
                     @if (@Model.IssueDate != null)
                     {
-                        <h4>Phát hành : @Model.IssueDate</h4>
+                        <h4>Phát hành : <a>@Model.IssueDate</a></h4>
                     }
                     @if (@Model.Status != 0)
                     {
@@ -58,26 +58,8 @@
                     }
                     else
                     {
-                        <div><label>Tình trạng : Hết Hàng</label></div>
+                        <h4>Tình trạng :<label> Hết Hàng</label></h4>
                     }
-                    @*<div class="block block-w3">
-                        <div class="starbox small ghosting">
-                        <div class="positioner">
-                            <div class="stars">
-                            <div class="ghost" style="display: none; width: 42.5px;"></div>
-                            <div class="colorbar" style="width: 42.5px;"></div>
-                            <div class="star_holder">
-                                <div class="star star-0"></div>
-                                <div class="star star-1"></div>
-                                <div class="star star-2"></div>
-                                <div class="star star-3"></div>
-                                <div class="star star-4"></div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div>*@
-
 
                     <ul class="social-top">
                         <li><a href="#" class="icon facebook"><i class="fa fa-facebook" aria-hidden="true"></i><span></span></a></li>

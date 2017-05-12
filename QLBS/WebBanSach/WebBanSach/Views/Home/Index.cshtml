@@ -1,9 +1,12 @@
 ﻿@using WebBanSach.Models;
-@model List<GroupBook>
 @{
     Layout = "~/Views/Layout/NguoiDungLayout.cshtml";
     ViewBag.Title = "Index";
 }
-@Html.Action("SachBanChayPartial","SanPham")
-@Html.Action("TheloaiPartial", "Theloai")
+@Html.Action("SachBanChayPartial", "SanPham")
+@Html.Action("TheloaiPartial", "Theloai", new { @GroupBookId = "GB0001" })
+@Html.Action("TheloaiPartial", "Theloai", new { @GroupBookId = "GB0002" })
+
+
+
 

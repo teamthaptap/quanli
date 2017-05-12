@@ -14,6 +14,11 @@ namespace WebBanSach.Controllers
         public ActionResult SachTheoTacgia(string AuthId = "0")
         {
             Auth au = db.Auths.SingleOrDefault(x => x.Id == AuthId);
+            if (au == null)
+            {
+                Response.StatusCode = 404;
+                return null;
+            }
             List<Book> LBook = db.Books.Where(x => x.Auth_Id == AuthId).OrderBy(x => x.PriceNew).ToList();
             if (LBook.Count == 0)
             {
