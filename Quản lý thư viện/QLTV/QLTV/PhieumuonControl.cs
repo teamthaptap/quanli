@@ -41,23 +41,108 @@ namespace QLTV
         }
         private void LoadData()
         {
-            txtMa.DataBindings.Clear();
-            txtMa.DataBindings.Add("Text", dgvHienthi.DataSource, "MaPM");
-            cbbbandoc.DataBindings.Clear();
-            cbbbandoc.DataBindings.Add("Text", dgvHienthi.DataSource, "MaBD");
+            txtMaPM.DataBindings.Clear();
+            txtMaPM.DataBindings.Add("Text", dgvHienthi.DataSource, "MaPM");
+            txtMaBD.DataBindings.Clear();
+            txtMaBD.DataBindings.Add("Text", dgvHienthi.DataSource, "MaBD");
             txtTrangthai.DataBindings.Clear();
             txtTrangthai.DataBindings.Add("Text", dgvHienthi.DataSource, "TrangThai");
         }
-        
+        public void themPM(string MaPM, string MaBD, string TT)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "them_PM";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("MaPM", SqlDbType.NVarChar)).Value = MaPM;
+                comd.Parameters.Add(new SqlParameter("MaBD", SqlDbType.NVarChar)).Value = MaBD;
+                comd.Parameters.Add(new SqlParameter("TT", SqlDbType.Int)).Value = TT;
+
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public void suaPM(string MaPM,string MaBD,string TT)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "Sua_PM";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("MaPM1", SqlDbType.NVarChar)).Value = MaPM;
+                comd.Parameters.Add(new SqlParameter("MaBD1", SqlDbType.NVarChar)).Value = MaBD;
+                comd.Parameters.Add(new SqlParameter("TT1", SqlDbType.Int)).Value = TT;
+       
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        public void xoaPM(string MaPM)
+        {
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                    con.Open();
+                string sql = "xoa_PM";
+                SqlCommand comd = new SqlCommand(sql, con);
+                comd.CommandType = CommandType.StoredProcedure;
+                comd.Parameters.Add(new SqlParameter("MaPM2", SqlDbType.NVarChar)).Value = MaPM;
+               
+
+
+                comd.ExecuteNonQuery();
+
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show("Loi: " + ex.Message);
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
 
         private void btCapnhat_Click(object sender, EventArgs e)
         {
-          
+            themPM(txtMaPM.Text,txtMaBD.Text,txtTrangthai.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Them Thanh Cong");
+            LoadData();
+            txtMaPM.Enabled = false;
+            
+            btSua.Enabled = true;
+            btXoa.Enabled = true;
         }
 
         private void btThem_Click(object sender, EventArgs e)
         {
-
+            txtMaPM.Enabled = true;
+            btSua.Enabled = false;
+            btXoa.Enabled = false;
         }
 
         private void groupBox2_Enter(object sender, EventArgs e)

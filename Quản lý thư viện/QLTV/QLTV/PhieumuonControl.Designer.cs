@@ -38,8 +38,8 @@
             this.btXoa = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.cbbbandoc = new System.Windows.Forms.ComboBox();
-            this.txtMa = new System.Windows.Forms.TextBox();
+            this.txtMaPM = new System.Windows.Forms.TextBox();
+            this.txtMaBD = new System.Windows.Forms.TextBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHienthi = new System.Windows.Forms.DataGridView();
@@ -159,9 +159,9 @@
             this.tableLayoutPanel1.Controls.Add(this.btSua, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.btCapnhat, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.btXoa, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.cbbbandoc, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtMa, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.txtMaPM, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTrangthai, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtMaBD, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -172,20 +172,20 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(607, 113);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // cbbbandoc
+            // txtMaPM
             // 
-            this.cbbbandoc.FormattingEnabled = true;
-            this.cbbbandoc.Location = new System.Drawing.Point(63, 40);
-            this.cbbbandoc.Name = "cbbbandoc";
-            this.cbbbandoc.Size = new System.Drawing.Size(145, 21);
-            this.cbbbandoc.TabIndex = 89;
+            this.txtMaPM.Enabled = false;
+            this.txtMaPM.Location = new System.Drawing.Point(63, 3);
+            this.txtMaPM.Name = "txtMaPM";
+            this.txtMaPM.Size = new System.Drawing.Size(145, 20);
+            this.txtMaPM.TabIndex = 90;
             // 
-            // txtMa
+            // txtMaBD
             // 
-            this.txtMa.Location = new System.Drawing.Point(63, 3);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(145, 20);
-            this.txtMa.TabIndex = 90;
+            this.txtMaBD.Location = new System.Drawing.Point(63, 40);
+            this.txtMaBD.Name = "txtMaBD";
+            this.txtMaBD.Size = new System.Drawing.Size(145, 20);
+            this.txtMaBD.TabIndex = 91;
             // 
             // splitContainer1
             // 
@@ -283,10 +283,10 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHienthi;
-        private System.Windows.Forms.ComboBox cbbbandoc;
-        private System.Windows.Forms.TextBox txtMa;
+        private System.Windows.Forms.TextBox txtMaPM;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPM;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaBD;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;
+        private System.Windows.Forms.TextBox txtMaBD;
     }
 }
