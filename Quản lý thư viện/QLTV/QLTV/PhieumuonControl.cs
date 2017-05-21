@@ -140,6 +140,9 @@ namespace QLTV
 
         private void btThem_Click(object sender, EventArgs e)
         {
+            txtMaPM.DataBindings.Clear();
+            txtMaBD.DataBindings.Clear();
+            
             txtMaPM.Enabled = true;
             btSua.Enabled = false;
             btXoa.Enabled = false;
@@ -148,6 +151,22 @@ namespace QLTV
         private void groupBox2_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            suaPM(txtMaPM.Text,txtMaBD.Text,txtTrangthai.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Sua Thanh Cong");
+            LoadData();
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            xoaPM(txtMaPM.Text);
+            KetNoiCSDL();
+            MessageBox.Show("Xoa thanh cong");
+            LoadData();
         }
     }
 }
