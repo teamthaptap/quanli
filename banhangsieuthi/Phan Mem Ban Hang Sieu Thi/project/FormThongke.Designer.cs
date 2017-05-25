@@ -357,7 +357,7 @@
             // lblKhachhang
             // 
             this.lblKhachhang.AutoSize = true;
-            this.lblKhachhang.Location = new System.Drawing.Point(18, 33);
+            this.lblKhachhang.Location = new System.Drawing.Point(18, 44);
             this.lblKhachhang.Name = "lblKhachhang";
             this.lblKhachhang.Size = new System.Drawing.Size(249, 19);
             this.lblKhachhang.TabIndex = 8;
