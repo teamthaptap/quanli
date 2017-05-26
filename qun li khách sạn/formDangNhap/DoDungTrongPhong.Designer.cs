@@ -188,6 +188,7 @@
             this.cbb3.Name = "cbb3";
             this.cbb3.Size = new System.Drawing.Size(188, 21);
             this.cbb3.TabIndex = 38;
+            this.cbb3.SelectedIndexChanged += new System.EventHandler(this.cbb3_SelectedIndexChanged);
             // 
             // DoDungTrongPhong
             // 

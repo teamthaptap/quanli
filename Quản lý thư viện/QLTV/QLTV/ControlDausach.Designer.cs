@@ -28,9 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txtNXB = new System.Windows.Forms.TextBox();
             this.txtDomat = new System.Windows.Forms.TextBox();
             this.txtTacgia = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -49,8 +51,7 @@
             this.txtNgonngu = new System.Windows.Forms.TextBox();
             this.txtSoluong = new System.Windows.Forms.TextBox();
             this.txtNhande = new System.Windows.Forms.TextBox();
-            this.cbbTheloai = new System.Windows.Forms.ComboBox();
-            this.cbbNXB = new System.Windows.Forms.ComboBox();
+            this.txtTheLoai = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHienthi = new System.Windows.Forms.DataGridView();
             this.MaDauSach = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,6 +62,7 @@
             this.NgonNgu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaTheLoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNXB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -111,6 +113,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 28F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.tableLayoutPanel1.Controls.Add(this.txtNXB, 3, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtDomat, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtTacgia, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
@@ -129,8 +132,7 @@
             this.tableLayoutPanel1.Controls.Add(this.txtNgonngu, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtSoluong, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtNhande, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.cbbTheloai, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.cbbNXB, 3, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtTheLoai, 3, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.FixedSize;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 16);
@@ -142,6 +144,14 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(780, 129);
             this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
+            // 
+            // txtNXB
+            // 
+            this.txtNXB.Location = new System.Drawing.Point(407, 99);
+            this.txtNXB.Name = "txtNXB";
+            this.txtNXB.Size = new System.Drawing.Size(154, 20);
+            this.txtNXB.TabIndex = 105;
             // 
             // txtDomat
             // 
@@ -193,6 +203,7 @@
             this.btXoa.TabIndex = 85;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btCapnhat
             // 
@@ -295,21 +306,12 @@
             this.txtNhande.Size = new System.Drawing.Size(154, 20);
             this.txtNhande.TabIndex = 101;
             // 
-            // cbbTheloai
+            // txtTheLoai
             // 
-            this.cbbTheloai.FormattingEnabled = true;
-            this.cbbTheloai.Location = new System.Drawing.Point(407, 67);
-            this.cbbTheloai.Name = "cbbTheloai";
-            this.cbbTheloai.Size = new System.Drawing.Size(154, 21);
-            this.cbbTheloai.TabIndex = 102;
-            // 
-            // cbbNXB
-            // 
-            this.cbbNXB.FormattingEnabled = true;
-            this.cbbNXB.Location = new System.Drawing.Point(407, 99);
-            this.cbbNXB.Name = "cbbNXB";
-            this.cbbNXB.Size = new System.Drawing.Size(154, 21);
-            this.cbbNXB.TabIndex = 103;
+            this.txtTheLoai.Location = new System.Drawing.Point(407, 67);
+            this.txtTheLoai.Name = "txtTheLoai";
+            this.txtTheLoai.Size = new System.Drawing.Size(154, 20);
+            this.txtTheLoai.TabIndex = 104;
             // 
             // groupBox1
             // 
@@ -390,6 +392,12 @@
             this.MaNXB.HeaderText = "Mã nhà xuất bản";
             this.MaNXB.Name = "MaNXB";
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStrip1_Opening);
+            // 
             // ControlDausach
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,8 +441,6 @@
         private System.Windows.Forms.TextBox txtNgonngu;
         private System.Windows.Forms.TextBox txtSoluong;
         private System.Windows.Forms.TextBox txtNhande;
-        private System.Windows.Forms.ComboBox cbbTheloai;
-        private System.Windows.Forms.ComboBox cbbNXB;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHienthi;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDauSach;
@@ -445,5 +451,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn NgonNgu;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaTheLoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNXB;
+        private System.Windows.Forms.TextBox txtNXB;
+        private System.Windows.Forms.TextBox txtTheLoai;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }

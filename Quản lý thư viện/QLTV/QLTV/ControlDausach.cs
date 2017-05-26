@@ -23,6 +23,7 @@ namespace QLTV
         private void loaddausach(object sender, EventArgs e)
         {
             loaddulieu();
+           
         }
 
         private void loaddulieu()
@@ -37,24 +38,10 @@ namespace QLTV
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
+    
+        }
 
-        }
-        public void loadCBBTheLoai()
-        {
-            DataTable dtdd;
-            dtdd = SqlHelper.ExecuteDataset(strConnect, "loadtheloai").Tables[0];
-            cbbTheloai.DataSource = dtdd;
-            cbbTheloai.DisplayMember = "TenTheLoai";
-            cbbTheloai.ValueMember = "MaTheLoai";
-        }
-        public void loadCBBNXB()
-        {
-            DataTable dtdd;
-            dtdd = SqlHelper.ExecuteDataset(strConnect, "loadNXB").Tables[0];
-            cbbNXB.DataSource = dtdd;
-            cbbNXB.DisplayMember = "TenNXB";
-            cbbNXB.ValueMember = "MaNXB";
-        }
+   
         private void btThem_Click(object sender, EventArgs e)
         {
             try
@@ -65,15 +52,41 @@ namespace QLTV
                 string nhande = txtNhande.Text.Trim();
                 string domat = txtDomat.Text.Trim();
                 string ngonngu = txtNgonngu.Text.Trim();
-                string theloai =cbbTheloai.SelectedValue.ToString();
-                string maNXB = cbbNXB.SelectedValue.ToString();
-                SqlHelper.ExecuteNonQuery(strConnect, "ADDTaiLieu", ma, tacgia, soluong,nhande,domat,ngonngu,theloai,maNXB);
-                MessageBox.Show("thành công");
+                string theloai =txtTheLoai.Text.Trim();
+                string maNXB = txtNXB.Text.Trim();
+                SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "ADDTaiLieu", ma, tacgia, soluong,nhande,domat,ngonngu,theloai,maNXB);
+                MessageBox.Show("Thêm thành công", "THông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                loaddulieu();
             }
             catch (Exception)
             {
                 MessageBox.Show("lỗi");
             }
+        }
+
+      
+
+
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string MaDV = txtMa.Text.Trim();
+                SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "deleteDauSach", MaDV);
+                loaddulieu();
+            }
+            catch (Exception) { }
         }
     }
 }

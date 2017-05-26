@@ -20,7 +20,8 @@ namespace QLTV
             KetNoiCSDL();
             LoadData();
         }
-        SqlConnection con = new SqlConnection(@"Data Source=KN-PC\KN;Initial Catalog=QL_ThuVien;Integrated Security=True");
+//        SqlConnection con = new SqlConnection(@"Data Source=KN-PC\KN;Initial Catalog=QL_ThuVien;Integrated Security=True");
+        SqlConnection con = new SqlConnection(@"Data Source=LATITUDE-PC;Initial Catalog=QL_ThuVien;Integrated Security=True");
         //ham ket noi
         private void KetNoiCSDL()
         {
