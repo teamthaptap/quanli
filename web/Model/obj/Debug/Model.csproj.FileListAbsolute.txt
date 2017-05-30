@@ -1,0 +1,10 @@
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\Model.dll.config
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\Model.dll
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\Model.pdb
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\EntityFramework.dll
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\EntityFramework.xml
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\obj\Debug\Model.dll
+C:\Users\thaop\documents\visual studio 2015\Projects\ShopThaoMoc\Model\obj\Debug\Model.pdb

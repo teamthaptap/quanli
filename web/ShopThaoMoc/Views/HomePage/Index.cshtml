@@ -1,0 +1,36 @@
+﻿@using Model;
+@model IQueryable<SanPham>
+@{
+    ViewBag.Title = "HomePage";
+    Layout = "~/Views/Shared/_LayoutHomePage.cshtml";
+}
+<!--product-starts-->
+<div class="product">
+    <div class="container">
+        <div class="product-top">
+            <div class="product-one">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-3 product-left">
+                        <div class="product-main simpleCart_shelfItem">
+                            <a href="single.html" class="mask"><img class="img-responsive zoom-img" src="@Url.Content("/Content/AnhSanPham/"+item.AnhSP )" alt="dang tai anh" /></a>
+                            <div class="product-bottom">
+                                <h3>@item.TenSP</h3>
+                                <p>@item.MauSac</p>
+                                
+                                <h4><a class="item_add" href="#"><i></i></a> <span class=" item_price">@item.GiaMoi</span></h4>
+                            </div>
+                            <div class="srch">
+                                <span>-50%</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+                <div class="clearfix"></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--product-end-->

@@ -1,0 +1,33 @@
+﻿@using Model
+@model IEnumerable<SanPham>
+<!--banner-starts-->
+<div class="bnr" id="home">
+    <div id="top" class="callbacks_container">
+        <ul class="rslides" id="slider4">
+            @for (int img = 0; img < Model.Count(); img++)
+            {
+                if (img == 0)
+                {
+                    <li>
+                        <img src="@Url.Content("~/Content/AnhSanPham/"+ @Model.ElementAt(img).AnhSP)" alt="" />
+                    </li>
+                }
+                else if (img == 1)
+                {
+                    <li>
+                        <img src="@Url.Content("~/Content/AnhSanPham/"+ @Model.ElementAt(img).AnhSP)"  alt="" />
+                    </li>
+                }
+                if (img == 2)
+                {
+                    <li>
+                        <img src="@Url.Content("~/Content/AnhSanPham/"+ @Model.ElementAt(img).AnhSP)"  alt="" />
+                    </li>
+                }
+            }
+
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!--banner-ends-->
