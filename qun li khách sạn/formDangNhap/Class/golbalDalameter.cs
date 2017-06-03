@@ -10,9 +10,9 @@ namespace formDangNhap.Class
     {
 
         //public static String str = @"Data Source=PHAMTUNG\SQLEXPRESS;Initial Catalog=QL_KhachSan;Integrated Security=True";
-
+        public static String str = @"Data Source=LATITUDE-PCs;Initial Catalog=QL_KhachSan;Integrated Security=True";
         //public static String str = @"Data Source=HUYHUNTER-PC\SQLEXPRESS;Initial Catalog=QL_KhachSan;Integrated Security=True";
-        public static String str = @"Data Source=KN-PC\KN;Initial Catalog=QL_KhachSan;Integrated Security=True";
+        //public static String str = @"Data Source=KN-PC\KN;Initial Catalog=QL_KhachSan;Integrated Security=True";
 
     }
 }
