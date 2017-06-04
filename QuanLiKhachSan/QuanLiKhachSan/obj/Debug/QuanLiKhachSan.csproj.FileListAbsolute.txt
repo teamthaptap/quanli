@@ -40,3 +40,6 @@ C:\Users\Latitude\Documents\GitHub\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debu
 D:\Github\quanli\QuanLiKhachSan\QuanLiKhachSan\bin\Debug\QuanLiKhachSan.exe.config
 D:\Github\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.exe
 D:\Github\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.pdb
+C:\Users\thaop\Documents\quanli\QuanLiKhachSan\QuanLiKhachSan\bin\Debug\QuanLiKhachSan.exe.config
+C:\Users\thaop\Documents\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.exe
+C:\Users\thaop\Documents\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.pdb
