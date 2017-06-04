@@ -19,3 +19,6 @@ D:\Thực tập nhóm_TH13\QLTV\QLTV\obj\Debug\QLTV.PhieumuonControl.resources
 D:\Github\quanli\QLTV(Mẫu cuối)\QLTV\bin\Debug\QLTV.exe.config
 D:\Github\quanli\QLTV(Mẫu cuối)\QLTV\obj\Debug\QLTV.exe
 D:\Github\quanli\QLTV(Mẫu cuối)\QLTV\obj\Debug\QLTV.pdb
+C:\Users\KN\Documents\GitHub\quanli\QLTV(Mẫu cuối)\QLTV\bin\Debug\QLTV.exe.config
+C:\Users\KN\Documents\GitHub\quanli\QLTV(Mẫu cuối)\QLTV\obj\Debug\QLTV.exe
+C:\Users\KN\Documents\GitHub\quanli\QLTV(Mẫu cuối)\QLTV\obj\Debug\QLTV.pdb
