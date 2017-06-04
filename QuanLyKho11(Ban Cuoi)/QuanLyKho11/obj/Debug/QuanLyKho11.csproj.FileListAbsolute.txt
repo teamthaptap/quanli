@@ -1,0 +1,56 @@
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe.config
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Properties.Resources.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmHangHoa.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csproj.GenerateResource.Cache
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.pdb
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.exe
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.pdb
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csprojResolveAssemblyReference.cache
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKhachHang.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKho.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmLogin.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmMain.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmNhaCungCap.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuNhap.resources
+C:\Users\VuThuy\Documents\Visual Studio 2015\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuXuat.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe.config
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.exe
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.pdb
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.pdb
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csprojResolveAssemblyReference.cache
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Properties.Resources.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmHangHoa.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKhachHang.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKho.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmLogin.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmMain.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmNhaCungCap.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuNhap.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuXuat.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csproj.GenerateResource.Cache
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmChiTietPhieuNhap.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmChiTietPhieuXuat.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Model.PhieuNhap1.resources
+D:\3.2\ThucTapNhom\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmHuongDan.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe.config
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.exe
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.pdb
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.exe
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\bin\Debug\QuanLyKho11.pdb
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csprojResolveAssemblyReference.cache
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Properties.Resources.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmChiTietPhieuXuat.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmChiTietPhieuNhap.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmHangHoa.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmHuongDan.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKhachHang.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmKho.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmLogin.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmMain.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmNhaCungCap.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuNhap.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuXuat.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Model.PhieuNhap1.resources
+C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csproj.GenerateResource.Cache
