@@ -1,4 +1,4 @@
-﻿namespace WindowsFormsApplication1
+﻿namespace QuanLiKhachSan
 {
     partial class HoaDon
     {
@@ -237,6 +237,7 @@
             this.bttThem.TabIndex = 0;
             this.bttThem.Text = "Thêm";
             this.bttThem.UseVisualStyleBackColor = true;
+            //            this.bttThem.Click += new System.EventHandler(this.bttThem_Click_1);
             // 
             // groupBox3
             // 

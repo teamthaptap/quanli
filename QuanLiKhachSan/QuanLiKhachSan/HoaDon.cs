@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using Microsoft.ApplicationBlocks.Data;
 using QuanLiKhachSan;
 
-namespace WindowsFormsApplication1
+namespace QuanLiKhachSan
 {
     public partial class HoaDon : Form
     {
@@ -102,5 +102,7 @@ namespace WindowsFormsApplication1
             SqlHelper.ExecuteNonQuery(strCon, "Delete_Hoadon", maHD, maKH);
             loadData();
         }
+
+      
     }
 }

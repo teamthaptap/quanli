@@ -87,6 +87,7 @@
             this.bttXoa.TabIndex = 3;
             this.bttXoa.Text = "Xóa";
             this.bttXoa.UseVisualStyleBackColor = true;
+            this.bttXoa.Click += new System.EventHandler(this.bttXoa_Click);
             // 
             // bttCapNhat
             // 
@@ -96,6 +97,7 @@
             this.bttCapNhat.TabIndex = 2;
             this.bttCapNhat.Text = "Cập nhật";
             this.bttCapNhat.UseVisualStyleBackColor = true;
+            this.bttCapNhat.Click += new System.EventHandler(this.bttCapNhat_Click);
             // 
             // bttSua
             // 
@@ -105,6 +107,7 @@
             this.bttSua.TabIndex = 1;
             this.bttSua.Text = "Sửa";
             this.bttSua.UseVisualStyleBackColor = true;
+            this.bttSua.Click += new System.EventHandler(this.bttSua_Click);
             // 
             // bttThem
             // 
@@ -114,6 +117,7 @@
             this.bttThem.TabIndex = 0;
             this.bttThem.Text = "Thêm";
             this.bttThem.UseVisualStyleBackColor = true;
+            this.bttThem.Click += new System.EventHandler(this.bttThem_Click);
             // 
             // groupBox1
             // 
@@ -220,6 +224,7 @@
             this.dgvDichVu.Name = "dgvDichVu";
             this.dgvDichVu.Size = new System.Drawing.Size(665, 200);
             this.dgvDichVu.TabIndex = 0;
+            this.dgvDichVu.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDichVu_RowEnter);
             // 
             // Column1
             // 
