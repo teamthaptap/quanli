@@ -36,7 +36,73 @@ namespace project
         }
         private void btnThemmoi_Click(object sender, EventArgs e)
         {
-           
+            bool kiemtranhaplieu = true;
+            if (txtMasanpham.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Mã Sản Phẩm");
+                kiemtranhaplieu = false;
+                txtMasanpham.Focus();
+            }
+            else if (txtTensanpham.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Tên Sản Phẩm");
+                kiemtranhaplieu = false;
+                txtTensanpham.Focus();
+            }
+            else if (txtGianhap.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Giá Nhập");
+                kiemtranhaplieu = false;
+                txtGianhap.Focus();
+            }
+            else if (txtGiaban.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Giá Bán");
+                kiemtranhaplieu = false;
+                txtGiaban.Focus();
+            }
+            else if (txtSoluong.Text == "")
+            {
+                MessageBox.Show("Chưa Nhập Số Lượng");
+                kiemtranhaplieu = false;
+                txtSoluong.Focus();
+            }
+            string sqlma = @"select hh.Masanpham from HANGHOA hh";
+            DataTable dtma = DataProvider.LoadCSDL(sqlma);
+            int n = dtma.Rows.Count;
+            for (int i = 0; i < n; i++)
+            {
+                if (txtMasanpham.Text == dtma.Rows[i][0].ToString())
+                {
+                    MessageBox.Show("Mã Sản Phẩm Đã Bị Trùng");
+                    kiemtranhaplieu = false;
+                    txtMasanpham.Clear();
+                    txtMasanpham.Focus();
+                }
+            }
+            if (kiemtranhaplieu == true)
+            {
+                try
+                {
+                    string sqlthem = @"insert HANGHOA(Masanpham,Tensanpham,Gianhap,Giaban,Soluong) 
+                                   values ('" + int.Parse(txtMasanpham.Text) + "', N'" + txtTensanpham.Text + "', '" + float.Parse(txtGianhap.Text) + "', '" + float.Parse(txtGiaban.Text) + "', '" + int.Parse(txtSoluong.Text) + "')";
+                    int ketqua = DataProvider.change(sqlthem);
+                    if (ketqua > 0)
+                    {
+                        MessageBox.Show("Thêm Sản Phẩm Thành Công", "Thêm Sản Phẩm", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        Loadsanpham();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Thêm Thất Bại");
+                    }
+                }
+                catch
+                {
+                    MessageBox.Show("Thêm Thất Bại");
+                }
+            }
+
         }
 
         private void txtMasanpham_KeyPress(object sender, KeyPressEventArgs e)

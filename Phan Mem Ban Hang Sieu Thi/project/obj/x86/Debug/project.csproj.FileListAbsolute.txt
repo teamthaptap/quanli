@@ -40,3 +40,5 @@ C:\Users\Jojo\Documents\GitHub\quanli\banhangsieuthi\Phan Mem Ban Hang Sieu Thi\
 C:\Users\Jojo\Documents\GitHub\quanli\banhangsieuthi\Phan Mem Ban Hang Sieu Thi\project\obj\x86\Debug\project.pdb
 D:\Github\quanli\Phan Mem Ban Hang Sieu Thi\project\obj\x86\Debug\project.exe
 D:\Github\quanli\Phan Mem Ban Hang Sieu Thi\project\obj\x86\Debug\project.pdb
+C:\Users\thaop\Documents\quanli\Phan Mem Ban Hang Sieu Thi\project\obj\x86\Debug\project.exe
+C:\Users\thaop\Documents\quanli\Phan Mem Ban Hang Sieu Thi\project\obj\x86\Debug\project.pdb
