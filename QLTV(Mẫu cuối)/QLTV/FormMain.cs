@@ -129,8 +129,8 @@ namespace QLTV
 
         private void TK_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Bạn muốn thoát??");
-            this.Close();
+            MessageBox.Show("Bạn muốn thoát??","Thông báo",MessageBoxButtons.YesNoCancel);
+            Application.Exit();
         }
     }
 }
