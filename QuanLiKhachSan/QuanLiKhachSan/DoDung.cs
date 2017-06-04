@@ -30,5 +30,63 @@ namespace QuanLiKhachSan
             frm.Show();
             Hide();
         }
+
+        private void bttThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                string ten = txtTen.Text.Trim();
+                string sl = txtSoLuong.Text.Trim();
+                string gia = txtGiaMua.Text.Trim();
+                string dvt = txtDVT.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strCon, "Insert_Dodung", ma, ten, sl, dvt, gia);
+                loadData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi rùi cưng!!");
+            }
+
+        }
+
+        private void bttSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                string ten = txtTen.Text.Trim();
+                string sl = txtSoLuong.Text.Trim();
+                string gia = txtGiaMua.Text.Trim();
+                string dvt = txtDVT.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strCon, "Update_Dodung", ma, ten, sl, dvt, gia);
+                loadData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi rùi cưng!!");
+            }
+
+        }
+
+        private void bttXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                SqlHelper.ExecuteNonQuery(strCon, "Delete_Dodung", ma);
+                loadData();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Lỗi rùi cưng!!");
+            }
+
+        }
+
+        private void dgvDoDung_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            setValue(e.RowIndex);
+        }
     }
 }
