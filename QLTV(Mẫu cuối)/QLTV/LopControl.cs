@@ -32,5 +32,10 @@ namespace QLTV
         {
             loaddulieu();
         }
+
+        private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

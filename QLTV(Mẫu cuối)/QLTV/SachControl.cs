@@ -123,5 +123,10 @@ namespace QLTV
             dtpNgaynhap.DataBindings.Clear();
             dtpNgaynhap.DataBindings.Add("Text", dgvHienthi.DataSource, "NgayNhap");
         }
+
+        private void dgvHienthi_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

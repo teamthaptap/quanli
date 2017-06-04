@@ -32,5 +32,61 @@ namespace QLTV
         {
             loaddulieu();
         }
+
+        private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                string ten = txtTen.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addTL", ma, ten);
+                MessageBox.Show("Thêm thành công!");
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                MessageBox.Show("Bạn xác nhận muốn xóa ???", "Thông báo", MessageBoxButtons.YesNoCancel);
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "delTL", ma);
+                MessageBox.Show("Xóa thành công!");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string ma = txtMa.Text.Trim();
+                string ten = txtTen.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "updateTL", ma, ten);
+                MessageBox.Show("Sửa thành công!");
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+
+        }
     }
 }

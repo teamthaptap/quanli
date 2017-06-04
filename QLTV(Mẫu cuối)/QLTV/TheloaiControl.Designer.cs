@@ -151,6 +151,7 @@
             this.btThem.TabIndex = 84;
             this.btThem.Text = "Thêm";
             this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // btSua
             // 
@@ -160,6 +161,7 @@
             this.btSua.TabIndex = 86;
             this.btSua.Text = "Sửa";
             this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btCapnhat
             // 
@@ -179,6 +181,7 @@
             this.btXoa.TabIndex = 85;
             this.btXoa.Text = "Xóa";
             this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // groupBox1
             // 
@@ -203,6 +206,7 @@
             this.dgvHienthi.Name = "dgvHienthi";
             this.dgvHienthi.Size = new System.Drawing.Size(604, 207);
             this.dgvHienthi.TabIndex = 0;
+            this.dgvHienthi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienthi_CellContentClick);
             // 
             // MaTheLoai
             // 
