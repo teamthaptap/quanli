@@ -54,3 +54,6 @@ C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhie
 C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.View.frmPhieuXuat.resources
 C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.Model.PhieuNhap1.resources
 C:\Users\KN\Downloads\QuanLyKho11\QuanLyKho11\obj\Debug\QuanLyKho11.csproj.GenerateResource.Cache
+C:\Users\Latitude\Documents\GitHub\quanli\QuanLyKho11(Ban Cuoi)\QuanLyKho11\bin\Debug\QuanLyKho11.exe.config
+C:\Users\Latitude\Documents\GitHub\quanli\QuanLyKho11(Ban Cuoi)\QuanLyKho11\obj\Debug\QuanLyKho11.exe
+C:\Users\Latitude\Documents\GitHub\quanli\QuanLyKho11(Ban Cuoi)\QuanLyKho11\obj\Debug\QuanLyKho11.pdb
