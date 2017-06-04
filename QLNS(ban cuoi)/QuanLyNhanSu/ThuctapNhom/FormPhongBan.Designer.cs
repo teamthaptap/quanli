@@ -59,7 +59,6 @@
             this.btncheck.TabIndex = 5;
             this.btncheck.Text = "&Kiểm tra";
             this.btncheck.UseVisualStyleBackColor = true;
-            this.btncheck.Click += new System.EventHandler(this.btncheck_Click);
             // 
             // FormPhongBan
             // 

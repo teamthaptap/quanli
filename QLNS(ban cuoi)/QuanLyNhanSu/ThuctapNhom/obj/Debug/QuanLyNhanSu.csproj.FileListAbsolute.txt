@@ -49,3 +49,6 @@ C:\Users\LA THANH\Desktop\THỰC TẬP NHÓM\nhom6\QuanLyNhanSu-Nhom6\QuanLyNhan
 C:\Users\thaop\Downloads\chó vương\QuanLyNhanSu\QuanLyNhanSu\ThuctapNhom\bin\Debug\ThuctapNhom.exe.config
 C:\Users\thaop\Downloads\chó vương\QuanLyNhanSu\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.exe
 C:\Users\thaop\Downloads\chó vương\QuanLyNhanSu\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.pdb
+C:\Users\thaop\Documents\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\bin\Debug\ThuctapNhom.exe.config
+C:\Users\thaop\Documents\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.exe
+C:\Users\thaop\Documents\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.pdb

@@ -218,7 +218,7 @@
             this.btLuu.TabIndex = 24;
             this.btLuu.Text = "Lưu";
             this.btLuu.UseVisualStyleBackColor = true;
-            this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
+           // this.btLuu.Click += new System.EventHandler(this.btLuu_Click);
             // 
             // btHuy
             // 
@@ -228,7 +228,7 @@
             this.btHuy.TabIndex = 25;
             this.btHuy.Text = "Hủy";
             this.btHuy.UseVisualStyleBackColor = true;
-            this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
+           // this.btHuy.Click += new System.EventHandler(this.btHuy_Click);
             // 
             // btThoat
             // 
@@ -238,7 +238,7 @@
             this.btThoat.TabIndex = 26;
             this.btThoat.Text = "Thoát";
             this.btThoat.UseVisualStyleBackColor = true;
-            this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
+            //this.btThoat.Click += new System.EventHandler(this.btThoat_Click);
             // 
             // label11
             // 
@@ -326,7 +326,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "FormThemNanhVien";
             this.Text = "Formthemnhanvien";
-            this.Load += new System.EventHandler(this.FormThemNanhVien_Load);
+           // this.Load += new System.EventHandler(this.FormThemNanhVien_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

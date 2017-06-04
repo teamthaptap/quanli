@@ -119,5 +119,10 @@ namespace ThuctapNhom
             FormMain m = new FormMain();
             m.Show();
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -81,7 +81,7 @@
             this.dvgnhanvien.RowTemplate.Height = 24;
             this.dvgnhanvien.Size = new System.Drawing.Size(1078, 244);
             this.dvgnhanvien.TabIndex = 0;
-            this.dvgnhanvien.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgnhanvien_CellClick);
+            
             // 
             // btnthoat
             // 
@@ -111,7 +111,7 @@
             this.btnxoanv.TabIndex = 20;
             this.btnxoanv.Text = "&Xóa";
             this.btnxoanv.UseVisualStyleBackColor = true;
-            this.btnxoanv.Click += new System.EventHandler(this.btnxoanv_Click);
+            //this.btnxoanv.Click += new System.EventHandler(this.btnxoanv_Click);
             // 
             // btnsuanv
             // 
@@ -121,7 +121,7 @@
             this.btnsuanv.TabIndex = 19;
             this.btnsuanv.Text = "&Sửa";
             this.btnsuanv.UseVisualStyleBackColor = true;
-            this.btnsuanv.Click += new System.EventHandler(this.btnsuanv_Click);
+            //this.btnsuanv.Click += new System.EventHandler(this.btnsuanv_Click);
             // 
             // btnthemnv
             // 
@@ -131,7 +131,7 @@
             this.btnthemnv.TabIndex = 18;
             this.btnthemnv.Text = "&Thêm";
             this.btnthemnv.UseVisualStyleBackColor = true;
-            this.btnthemnv.Click += new System.EventHandler(this.btnthem_Click);
+            //this.btnthemnv.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // txtID
             // 
@@ -338,7 +338,7 @@
             this.btCapNhat.TabIndex = 44;
             this.btCapNhat.Text = "&Cập nhật";
             this.btCapNhat.UseVisualStyleBackColor = true;
-            this.btCapNhat.Click += new System.EventHandler(this.btCapNhat_Click);
+            //this.btCapNhat.Click += new System.EventHandler(this.btCapNhat_Click);
             // 
             // groupBox1
             // 
@@ -391,7 +391,7 @@
             this.btnHuy.TabIndex = 47;
             this.btnHuy.Text = "&Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
+           // this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // txtTimKiem
             // 
@@ -399,7 +399,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(200, 20);
             this.txtTimKiem.TabIndex = 51;
-            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+            //this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label13
             // 
