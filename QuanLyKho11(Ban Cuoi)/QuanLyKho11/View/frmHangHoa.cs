@@ -25,40 +25,107 @@ namespace QuanLyKho11.View
 
         private void frmHangHoa_Load(object sender, EventArgs e)
         {
-           
+            dgvHangHoa.DataSource = hhctl.GetData();
+            dgvHangHoa.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dis_en(false);
+            LoadData();
         }
 
         private void dgvHangHoa_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            
-        }
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                try
+                {
+                    txtMaHang.Text = dgvHangHoa.CurrentRow.Cells[0].Value.ToString();
+                    txtTenHang.Text = dgvHangHoa.CurrentRow.Cells[1].Value.ToString();
+                    txtDonViTinh.Text = dgvHangHoa.CurrentRow.Cells[2].Value.ToString();
+                    txtTon.Text = dgvHangHoa.CurrentRow.Cells[3].Value.ToString();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
         private void GanDuLieu(HangHoaObj hh1obj)
         {
-          
+            hh1obj.MaHang = txtMaHang.Text.ToString().Trim();
+            hh1obj.TenHang = txtTenHang.Text.ToString().Trim();
+            hh1obj.DonViTinh = txtDonViTinh.Text.ToString().Trim();
+            hh1obj.Ton = txtTon.Text.ToString().Trim();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-           
+            flag = 0;
+            clean();
+            dis_en(true);
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            
+            flag = 1;
+            dis_en(true);
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            
+            DialogResult dr = MessageBox.Show("Bạn có thật sự muốn xóa ?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            {
+                if (dr == DialogResult.Yes)
+                {
+                    if (hhctl.DelHangHoa(txtMaHang.Text.Trim()))
+                    {
+                        MessageBox.Show("Xóa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        frmHangHoa_Load(sender, e);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Xóakhông thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                else
+                {
+                    return;
+                }
+            }
         }
+
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            
+            GanDuLieu(hhobj);
+            if (flag == 0)   // thêm
+            {
+                if (hhctl.AddHangHoa(hhobj))
+                {
+                    MessageBox.Show("Thêm thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmHangHoa_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Thêm không thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else            // sửa
+            {
+                if (hhctl.UpdateHangHoa(hhobj))
+                {
+                    MessageBox.Show("Sửa thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    frmHangHoa_Load(sender, e);
+                }
+                else
+                {
+                    MessageBox.Show("Sửa không thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
         }
 
         private void btnHuy_Click(object sender, EventArgs e)
         {
+            frmHangHoa_Load(sender, e);
+            dis_en(false);
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
