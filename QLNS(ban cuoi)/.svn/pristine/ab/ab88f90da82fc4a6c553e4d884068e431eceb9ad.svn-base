@@ -1,0 +1,13 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ThuctapNhom
+{
+    class globalParameter
+    {
+        public static String str = @"Data Source=113.178.38.151;Initial Catalog=QuanLyNhanSu;User ID=crysad1811;Password=crysad1811";
+    }
+}
