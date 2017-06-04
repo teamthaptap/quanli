@@ -1,4 +1,4 @@
-﻿namespace QuanLiKhachSan
+﻿namespace WindowsFormsApplication1
 {
     partial class HoaDon
     {

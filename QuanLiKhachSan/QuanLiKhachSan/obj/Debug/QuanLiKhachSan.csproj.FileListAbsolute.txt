@@ -16,3 +16,6 @@ c:\users\latitude\documents\visual studio 2015\Projects\QuanLiKhachSan\QuanLiKha
 c:\users\latitude\documents\visual studio 2015\Projects\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.DoDungTrongPhong.resources
 c:\users\latitude\documents\visual studio 2015\Projects\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.KhachThuePhong.resources
 c:\users\latitude\documents\visual studio 2015\Projects\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.Phong.resources
+C:\Users\KN\Documents\GitHub\quanli\QuanLiKhachSan\QuanLiKhachSan\bin\Debug\QuanLiKhachSan.exe.config
+C:\Users\KN\Documents\GitHub\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.exe
+C:\Users\KN\Documents\GitHub\quanli\QuanLiKhachSan\QuanLiKhachSan\obj\Debug\QuanLiKhachSan.pdb
