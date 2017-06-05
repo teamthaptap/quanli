@@ -12,7 +12,7 @@ using QuanLyKho11.Model;
 
 namespace QuanLyKho11.View
 {
-    public partial class  frmHangHoa : Form
+    public partial class frmHangHoa : Form
     {
         HangHoaCtl hhctl = new HangHoaCtl();
         HangHoaObj hhobj = new HangHoaObj();
@@ -21,7 +21,34 @@ namespace QuanLyKho11.View
         {
             InitializeComponent();
         }
-      
+        public void LoadData()
+        {
+            txtMaHang.Text = dgvHangHoa.CurrentRow.Cells["MaHang"].Value.ToString();
+            txtTenHang.Text = dgvHangHoa.CurrentRow.Cells[1].Value.ToString();
+            txtDonViTinh.Text = dgvHangHoa.CurrentRow.Cells[2].Value.ToString();
+            txtTon.Text = dgvHangHoa.CurrentRow.Cells[3].Value.ToString();
+        }
+        public void dis_en(bool e)
+        {
+            txtMaHang.Enabled = e;
+            txtTenHang.Enabled = e;
+            txtDonViTinh.Enabled = e;
+            txtTon.Enabled = e;
+            btnHuy.Enabled = e;
+            btnLuu.Enabled = e;
+            btnThem.Enabled = !e;
+            btnSua.Enabled = !e;
+            btnXoa.Enabled = !e;
+        }
+        private void clean()
+        {
+            txtMaHang.Clear();
+            txtTenHang.Clear();
+            txtDonViTinh.Clear();
+            // cbbMaNV.Clear();
+            txtTon.Clear();
+
+        }
 
         private void frmHangHoa_Load(object sender, EventArgs e)
         {
@@ -47,6 +74,7 @@ namespace QuanLyKho11.View
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
         private void GanDuLieu(HangHoaObj hh1obj)
         {
             hh1obj.MaHang = txtMaHang.Text.ToString().Trim();
@@ -91,7 +119,6 @@ namespace QuanLyKho11.View
             }
         }
 
-
         private void btnLuu_Click(object sender, EventArgs e)
         {
             GanDuLieu(hhobj);
@@ -119,7 +146,6 @@ namespace QuanLyKho11.View
                     MessageBox.Show("Sửa không thành công", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
         }
 
         private void btnHuy_Click(object sender, EventArgs e)

@@ -14,12 +14,32 @@ namespace QuanLyKho11.Controller
         ConnectToSql con = new ConnectToSql();
         SqlCommand cmd = new SqlCommand();
 
+        internal object GetData()
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool DelNhaCungCap(string v)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool AddNhaCungCap(NhaCungCapObj nccobj)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal bool UpdateNhaCungCap(NhaCungCapObj nccobj)
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         /// Hàm lấy dữ liệu . Trả về 1 data table
         /// </summary>
         /// <returns></returns>
-     
 
-       
+
+
     }
 }
