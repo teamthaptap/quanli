@@ -114,5 +114,10 @@ namespace ThuctapNhom
         {
 
         }
+
+        private void FormThemNanhVien_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
