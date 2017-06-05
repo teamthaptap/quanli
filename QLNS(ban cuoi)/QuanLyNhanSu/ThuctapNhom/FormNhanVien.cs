@@ -80,7 +80,7 @@ namespace ThuctapNhom
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "hoten";
-            cl.HeaderText = "Họ tên";
+            cl.HeaderText = "H? tên";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "ngaysinh";
@@ -88,7 +88,7 @@ namespace ThuctapNhom
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "gioitinh";
-            cl.HeaderText = "Giới tính";
+            cl.HeaderText = "Gi?i tính";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "quequan";
@@ -96,76 +96,76 @@ namespace ThuctapNhom
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "diachi";
-            cl.HeaderText = "Địa chỉ";
+            cl.HeaderText = "Ð?a ch?";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "socmnd";
-            cl.HeaderText = "Số CMND";
+            cl.HeaderText = "S? CMND";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "dienthoai";
-            cl.HeaderText = "Điện thoại";
+            cl.HeaderText = "Ði?n tho?i";
             dgv.Columns.Add(cl);
-            
+
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "email";
             cl.HeaderText = "Email";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "chucvu";
-            cl.HeaderText = "Chức vụ";
+            cl.HeaderText = "Ch?c v?";
             dgv.Columns.Add(cl);
             cl = new DataGridViewTextBoxColumn();
             cl.DataPropertyName = "phongban";
             cl.HeaderText = "Phòng";
             dgv.Columns.Add(cl);
-            
+
         }
         private bool isEmpty()
         {
             if (txthoten.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập họ tên");
+                MessageBox.Show("B?n chua nh?p h? tên");
                 return true;
             }
             if (!rdbnam.Checked && !rdbnu.Checked)
             {
-                MessageBox.Show("Bạn chưa chọn giới tính");
+                MessageBox.Show("B?n chua ch?n gi?i tính");
                 return true;
             }
             if (txtquequan.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập quê quán");
+                MessageBox.Show("B?n chua nh?p quê quán");
                 return true;
             }
             if (txtdiachi.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập địa chỉ");
+                MessageBox.Show("B?n chua nh?p d?a ch?");
                 return true;
             }
             if (txtsoCMND.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập số CMND");
+                MessageBox.Show("B?n chua nh?p s? CMND");
                 return true;
             }
             if (txtdienthoai.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập điện thoại");
+                MessageBox.Show("B?n chua nh?p di?n tho?i");
                 return true;
             }
             if (txtemail.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa nhập email");
+                MessageBox.Show("B?n chua nh?p email");
                 return true;
             }
             if (cmbPhongBan.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa chọn phòng ban");
+                MessageBox.Show("B?n chua ch?n phòng ban");
                 return true;
             }
             if (cmbChucVu.Text.Trim() == "")
             {
-                MessageBox.Show("Bạn chưa chọn chức vụ");
+                MessageBox.Show("B?n chua ch?n ch?c v?");
                 return true;
             }
             return false;
@@ -219,7 +219,13 @@ namespace ThuctapNhom
         //    txtdienthoai.DataBindings.Clear();
         //    txtdienthoai.DataBindings.Add("Text", dvgnhanvien.DataSource, "dienthoai");
         //}
-        
+        private void btnthem_Click(object sender, EventArgs e)
+        {
+            FormThemNanhVien them = new FormThemNanhVien();
+            this.Hide();
+            them.Show();
+        }
+
         private void btnthoat_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -227,20 +233,176 @@ namespace ThuctapNhom
             m.Show();
         }
 
-        
+        private void btnsuanv_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == "")
+            {
+                MessageBox.Show("B?n chua ch?n b?n ghi nào");
+                return;
+            }
+            txtdiachi.Enabled = true;
+            txtdienthoai.Enabled = true;
+            txtemail.Enabled = true;
+            txthoten.Enabled = true;
+            txtquequan.Enabled = true;
+            txtsoCMND.Enabled = true;
+            dtpngaysinh.Enabled = true;
+            cmbChucVu.Enabled = true;
+            cmbPhongBan.Enabled = true;
+            btnthemnv.Enabled = false;
+            btnsuanv.Enabled = false;
+            btnxoanv.Enabled = false;
+            btCapNhat.Enabled = true;
+            btnHuy.Enabled = true;
+            dvgnhanvien.Enabled = false;
+        }
 
-      
+        private void btCapNhat_Click(object sender, EventArgs e)
+        {
+            if (isEmpty()) return;
+            NhanVien_obj nv = new NhanVien_obj();
+            nv.IDNV = txtID.Text;
+            nv.hotenNV = txthoten.Text;
+            nv.ngaysinhNV = dtpngaysinh.Value;
+            nv.emailNV = txtemail.Text;
+            nv.dienthoaiNV = txtdienthoai.Text;
+            nv.quequanNV = txtquequan.Text;
+            nv.diachiNV = txtdiachi.Text;
+            nv.soCMNDNV = txtsoCMND.Text;
+            nv.CV_IDNV = cmbChucVu.SelectedValue.ToString();
+            nv.PB_IDNV = cmbPhongBan.SelectedValue.ToString();
 
-       
-       
+            NhanVienBus bus = new NhanVienBus();
+            int ret;
+            ret = bus.update(nv);
+            bus.close();
+            if (ret < 0)
+            {
+                MessageBox.Show("Không s?a du?c d? li?u ", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            MessageBox.Show("S?a thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            txtdiachi.Enabled = false;
+            txtdienthoai.Enabled = false;
+            txtemail.Enabled = false;
+            txthoten.Enabled = false;
+            txtquequan.Enabled = false;
+            txtsoCMND.Enabled = false;
+            dtpngaysinh.Enabled = false;
+            cmbChucVu.Enabled = false;
+            cmbPhongBan.Enabled = false;
+            btnthemnv.Enabled = true;
+            btnsuanv.Enabled = true;
+            btnxoanv.Enabled = true;
+            btCapNhat.Enabled = false;
+            btnHuy.Enabled = false;
+            dvgnhanvien.Enabled = true;
+        }
+
+        private void btnxoanv_Click(object sender, EventArgs e)
+        {
+            if (txtID.Text == "")
+            {
+                MessageBox.Show("B?n chua ch?n b?n ghi nào");
+                return;
+            }
+            try
+            {
+                connect();
+                SqlCommand command = new SqlCommand("SP_DELETE_NHANVIEN", conn);
+                command.CommandType = CommandType.StoredProcedure;
+                command.Parameters.Add(new SqlParameter("@id", txtID.Text));
+                command.ExecuteNonQuery();
+                MessageBox.Show("Xóa thành công !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                dt.Clear();
+                getdata();
+                disconect();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Xóa d? li?u không thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+        }
+
+
 
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
 
-       
+        private void dvgnhanvien_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string gt = this.dvgnhanvien.CurrentRow.Cells[2].Value.ToString().Trim();
+            if (gt == "Nam")
+            {
+                rdbnam.Checked = true;
 
-     
+            }
+            else if (gt == "N?")
+            {
+                rdbnu.Checked = true;
+
+            }
+            txtID.DataBindings.Clear();
+            txtID.DataBindings.Add("Text", dvgnhanvien.DataSource, "ID");
+            txthoten.DataBindings.Clear();
+            txthoten.DataBindings.Add("Text", dvgnhanvien.DataSource, "hoten");
+            dtpngaysinh.DataBindings.Clear();
+            dtpngaysinh.DataBindings.Add("Text", dvgnhanvien.DataSource, "ngaysinh");
+            txtquequan.DataBindings.Clear();
+            txtquequan.DataBindings.Add("Text", dvgnhanvien.DataSource, "quequan");
+            txtdiachi.DataBindings.Clear();
+            txtdiachi.DataBindings.Add("Text", dvgnhanvien.DataSource, "diachi");
+            txtsoCMND.DataBindings.Clear();
+            txtsoCMND.DataBindings.Add("Text", dvgnhanvien.DataSource, "soCMND");
+            txtemail.DataBindings.Clear();
+            txtemail.DataBindings.Add("Text", dvgnhanvien.DataSource, "email");
+            txtdienthoai.DataBindings.Clear();
+            txtdienthoai.DataBindings.Add("Text", dvgnhanvien.DataSource, "dienthoai");
+            cmbChucVu.DataBindings.Clear();
+            cmbChucVu.DataBindings.Add("Text", dvgnhanvien.DataSource, "chucvu");
+            cmbPhongBan.DataBindings.Clear();
+            cmbPhongBan.DataBindings.Add("Text", dvgnhanvien.DataSource, "phongban");
+        }
+
+        private void txtTimKiem_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dt.Clear();
+                connect();
+                getdata();
+                disconect();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("L?i");
+            }
+        }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            txtdiachi.Enabled = false;
+            txtdienthoai.Enabled = false;
+            txtemail.Enabled = false;
+            txthoten.Enabled = false;
+            txtquequan.Enabled = false;
+            txtsoCMND.Enabled = false;
+            dtpngaysinh.Enabled = false;
+            cmbChucVu.Enabled = false;
+            cmbPhongBan.Enabled = false;
+            btnthemnv.Enabled = true;
+            btnsuanv.Enabled = true;
+            btnxoanv.Enabled = true;
+            btCapNhat.Enabled = false;
+            btnHuy.Enabled = false;
+            dvgnhanvien.Enabled = true;
+            dt.Clear();
+            connect();
+            getdata();
+            disconect();
+        }
     }
 }
