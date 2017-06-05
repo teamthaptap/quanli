@@ -1,0 +1,189 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Data.SqlClient;
+using Quan_Ly_Hoc_Sinh.Class;
+
+namespace Quan_Ly_Hoc_Sinh
+{
+    public partial class FormHocSinh : Form
+    {
+        private SqlConnection conn;
+        private DataTable dt = new DataTable("tblHOCSINH");
+        private SqlDataAdapter da = new SqlDataAdapter();
+        public void connect()
+        {
+            String conStr = globalParameter.str;
+            try
+            {
+
+                conn = new SqlConnection(conStr);
+                conn.Open();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("LỖI");
+            }
+        }
+        public void disconect()
+        {
+            conn.Close();
+            conn.Dispose();
+            conn = null;
+        }
+        public void getdata()
+        {
+            SqlCommand command = new SqlCommand();
+            command.Connection = conn;
+            command.CommandType = CommandType.StoredProcedure;
+            command.CommandText = "sp_TIMKIEMHOCSINH";
+            command.Parameters.Add(new SqlParameter("@mahienthi", txtTimKiem.Text));
+            command.Parameters.Add(new SqlParameter("@ten", txtTimKiem.Text));
+            command.Parameters.Add(new SqlParameter("@lop", txtTimKiem.Text));
+            da.SelectCommand = command;
+            da.Fill(dt);
+            dgvHocSinh.DataSource = dt;
+        }
+        private void initGrid(DataGridView dgv)
+        {
+            dgv.AutoGenerateColumns = false;
+            DataGridViewColumn cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "MaHienThi";
+            cl.HeaderText = "Mã";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "HoTen";
+            cl.HeaderText = "Tên";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "NgaySinh";
+            cl.HeaderText = "Ngày sinh";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "Gioitinh";
+            cl.HeaderText = "Giới tính";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "DiaChi";
+            cl.HeaderText = "Địa chỉ";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "DienThoai";
+            cl.HeaderText = "Điện thoại";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "QueQuan";
+            cl.HeaderText = "Quê quán";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "DanToc";
+            cl.HeaderText = "Dân tộc";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "Lop";
+            cl.HeaderText = "Lớp";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "HoTenCha";
+            cl.HeaderText = "Cha";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "NgheNghiepCha";
+            cl.HeaderText = "Nghề Nghiệp";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "DienThoaiCha";
+            cl.HeaderText = "Điện thoại";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "HoTenMe";
+            cl.HeaderText = "Mẹ";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "NgheNghiepMe";
+            cl.HeaderText = "Nghề Nghiệp";
+            dgv.Columns.Add(cl);
+            cl = new DataGridViewTextBoxColumn();
+            cl.DataPropertyName = "DienThoaiMe";
+            cl.HeaderText = "Điện thoại";
+            dgv.Columns.Add(cl);
+        }
+        public FormHocSinh()
+        {
+            InitializeComponent();
+        }
+
+      
+        
+        private void getdata2()
+        {
+            SqlConnection con = new SqlConnection(globalParameter.str);
+            SqlCommand cm = new SqlCommand();
+            SqlDataAdapter da = new SqlDataAdapter();
+            DataTable data = new DataTable();
+            cm.Connection = con;
+
+            cm.CommandText = "select * from LOP";
+            da.SelectCommand = cm;
+            da.Fill(data);
+            cbbLop.DataSource = data;
+            cbbLop.DisplayMember = "MaHienThi";
+            cbbLop.ValueMember = "MaLop";
+        }
+
+        private bool isEmpty()
+        {
+            if(txtMaHienThi.Text=="")
+            {
+                MessageBox.Show("Bạn chưa nhập mã", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (txtHoten.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập họ tên", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (!rbNam.Checked && !rbNu.Checked)
+            {
+                MessageBox.Show("Bạn chưa chọn giới tính", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (txtDiachi.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập địa chỉ", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (txtQuequan.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập quê quán", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (txtDantoc.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập dân tộc", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (txtDienthoai.Text == "")
+            {
+                MessageBox.Show("Bạn chưa nhập điện thoại", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            if (cbbLop.Text == "")
+            {
+                MessageBox.Show("Bạn chưa chọn lớp", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return true;
+            }
+            return false;
+        }
+        
+
+  
+        
+    }
+}
