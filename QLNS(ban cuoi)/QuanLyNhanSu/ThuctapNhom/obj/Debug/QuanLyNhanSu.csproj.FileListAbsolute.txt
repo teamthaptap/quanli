@@ -55,3 +55,6 @@ C:\Users\thaop\Documents\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debu
 C:\Users\KN\Documents\GitHub\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\bin\Debug\ThuctapNhom.exe.config
 C:\Users\KN\Documents\GitHub\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.exe
 C:\Users\KN\Documents\GitHub\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.pdb
+D:\Github\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\bin\Debug\ThuctapNhom.exe.config
+D:\Github\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.exe
+D:\Github\quanli\QLNS(ban cuoi)\QuanLyNhanSu\ThuctapNhom\obj\Debug\ThuctapNhom.pdb
