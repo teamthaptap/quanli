@@ -342,6 +342,7 @@
             this.dgvHienthi.Name = "dgvHienthi";
             this.dgvHienthi.Size = new System.Drawing.Size(780, 186);
             this.dgvHienthi.TabIndex = 0;
+            this.dgvHienthi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienthi_CellContentClick);
             // 
             // MaDauSach
             // 

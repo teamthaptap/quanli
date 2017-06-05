@@ -126,7 +126,7 @@ namespace QLTV
 
         private void dgvHienthi_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
-
+            bingdingGV();
         }
     }
 }

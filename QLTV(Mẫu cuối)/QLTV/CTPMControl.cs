@@ -22,6 +22,8 @@ namespace QLTV
         private void loadCTPM(object sender, EventArgs e)
         {
             loaddulieu();
+            loadCBBphieu();
+            loadCBBsach();
         }
 
         private void loaddulieu()
@@ -33,7 +35,22 @@ namespace QLTV
         {
             loaddulieu();
         }
-
+        private void loadCBBphieu()
+        {
+            DataTable dtcv;
+            dtcv = SqlHelper.ExecuteDataset(StrConnect.strConnect(), "loadcbbphieumuon").Tables[0];
+            cbbPhieu.DataSource = dtcv;
+            cbbPhieu.DisplayMember = "MaPM";
+            cbbPhieu.ValueMember = "MaPM";
+        }
+        private void loadCBBsach()
+        {
+            DataTable dtcv;
+            dtcv = SqlHelper.ExecuteDataset(StrConnect.strConnect(), "loadcbbsach").Tables[0];
+            cbbSach.DataSource = dtcv;
+            cbbSach.DisplayMember = "MaSach";
+            cbbSach.ValueMember = "MaSach";
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             try
@@ -87,6 +104,26 @@ namespace QLTV
             {
                 MessageBox.Show("Xảy ra lỗi!!!");
             }
+        }
+        private void bingdingGV()
+        {
+            txtGhiChu.DataBindings.Clear();
+            txtGhiChu.DataBindings.Add("Text", dgvHienthi.DataSource, "GhiChu");
+            cbbPhieu.DataBindings.Clear();
+            cbbPhieu.DataBindings.Add("Text", dgvHienthi.DataSource, "MaPM");
+            cbbSach.DataBindings.Clear();
+            cbbSach.DataBindings.Add("Text", dgvHienthi.DataSource, "MaSach");
+            dtpHantra.DataBindings.Clear();
+            dtpHantra.DataBindings.Add("Text", dgvHienthi.DataSource, "HanTra");
+            dtpNgaymuon.DataBindings.Clear();
+            dtpNgaymuon.DataBindings.Add("Text", dgvHienthi.DataSource, "NgayMuon");
+            dtpNgaytra.DataBindings.Clear();
+            dtpNgaytra.DataBindings.Add("Text", dgvHienthi.DataSource, "NgayTra");
+        }
+        private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            bingdingGV();
         }
     }
 }

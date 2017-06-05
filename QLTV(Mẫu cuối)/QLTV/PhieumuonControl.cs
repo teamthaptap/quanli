@@ -22,6 +22,15 @@ namespace QLTV
         private void loaddgv(object sender, EventArgs e)
         {
             loaddulieu();
+            loadcbbBD();
+        }
+        private void loadcbbBD()
+        {
+            DataTable dtcvd;
+            dtcvd = SqlHelper.ExecuteDataset(StrConnect.strConnect(), "loadmaBD").Tables[0];
+            cbbbandoc.DataSource = dtcvd;
+            cbbbandoc.DisplayMember = "MaBD";
+            cbbbandoc.ValueMember = "MaBD";
         }
 
         private void loaddulieu()
@@ -33,10 +42,18 @@ namespace QLTV
         {
             loaddulieu();
         }
-
+        private void bingdingGV()
+        {
+            cbbbandoc.DataBindings.Clear();
+            cbbbandoc.DataBindings.Add("Text", dgvHienthi.DataSource, "MaBD");
+            txtMa.DataBindings.Clear();
+            txtMa.DataBindings.Add("Text", dgvHienthi.DataSource, "MaPM");
+            txtTrangthai.DataBindings.Clear();
+            txtTrangthai.DataBindings.Add("Text", dgvHienthi.DataSource, "TrangThai");
+        }
         private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            bingdingGV();
         }
 
         private void btThem_Click(object sender, EventArgs e)

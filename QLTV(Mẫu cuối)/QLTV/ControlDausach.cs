@@ -91,5 +91,29 @@ namespace QLTV
             catch (Exception) { }
 
         }
+        public void bingdingGV()
+        {
+            txtMa.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtMa.DataBindings.Add("text", dgvHienthi.DataSource, "MaDauSach");
+            txtDomat.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtDomat.DataBindings.Add("text", dgvHienthi.DataSource, "DoMat");
+            txtNgonngu.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtNgonngu.DataBindings.Add("text", dgvHienthi.DataSource, "NgonNgu");
+            txtNhande.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtNhande.DataBindings.Add("text", dgvHienthi.DataSource, "NhanDe");
+            txtSoluong.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtSoluong.DataBindings.Add("text", dgvHienthi.DataSource, "SoLuong");
+            txtTacgia.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            txtTacgia.DataBindings.Add("text", dgvHienthi.DataSource, "TacGia");
+            cbbNXB.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            cbbNXB.DataBindings.Add("text", dgvHienthi.DataSource, "MaNXB");
+            cbbTheloai.DataBindings.Clear();//Lệnh xóa các dữ liệu của text box
+            cbbTheloai.DataBindings.Add("text", dgvHienthi.DataSource, "MaTheLoai");
+        }
+
+        private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bingdingGV();
+        }
     }
 }

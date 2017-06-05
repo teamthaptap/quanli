@@ -36,7 +36,15 @@ namespace QLTV
 
         private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            bingdingGV();
+        }
 
+        private void bingdingGV()
+        {
+            txtMa.DataBindings.Clear();
+            txtMa.DataBindings.Add("Text", dgvHienthi.DataSource, "MaTheLoai");
+            txtTen.DataBindings.Clear();
+            txtTen.DataBindings.Add("Text", dgvHienthi.DataSource, "TenTheLoai");
         }
 
         private void btThem_Click(object sender, EventArgs e)

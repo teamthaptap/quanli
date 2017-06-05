@@ -48,8 +48,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtDienthoai = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.rbdNam = new System.Windows.Forms.RadioButton();
-            this.rbdNu = new System.Windows.Forms.RadioButton();
+            this.rdbNam = new System.Windows.Forms.RadioButton();
+            this.rdbNu = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -132,8 +132,8 @@
             this.tableLayoutPanel1.Controls.Add(this.label7, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtDienthoai, 3, 4);
             this.tableLayoutPanel1.Controls.Add(this.label9, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rbdNam, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rbdNu, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.rdbNam, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.rdbNu, 1, 4);
             this.tableLayoutPanel1.Controls.Add(this.button1, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.button2, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.button3, 5, 2);
@@ -289,27 +289,27 @@
             this.label9.TabIndex = 80;
             this.label9.Text = "Giới tính :";
             // 
-            // rbdNam
+            // rdbNam
             // 
-            this.rbdNam.AutoSize = true;
-            this.rbdNam.Checked = true;
-            this.rbdNam.Location = new System.Drawing.Point(94, 93);
-            this.rbdNam.Name = "rbdNam";
-            this.rbdNam.Size = new System.Drawing.Size(47, 17);
-            this.rbdNam.TabIndex = 81;
-            this.rbdNam.TabStop = true;
-            this.rbdNam.Text = "Nam";
-            this.rbdNam.UseVisualStyleBackColor = true;
+            this.rdbNam.AutoSize = true;
+            this.rdbNam.Checked = true;
+            this.rdbNam.Location = new System.Drawing.Point(94, 93);
+            this.rdbNam.Name = "rdbNam";
+            this.rdbNam.Size = new System.Drawing.Size(47, 17);
+            this.rdbNam.TabIndex = 81;
+            this.rdbNam.TabStop = true;
+            this.rdbNam.Text = "Nam";
+            this.rdbNam.UseVisualStyleBackColor = true;
             // 
-            // rbdNu
+            // rdbNu
             // 
-            this.rbdNu.AutoSize = true;
-            this.rbdNu.Location = new System.Drawing.Point(94, 123);
-            this.rbdNu.Name = "rbdNu";
-            this.rbdNu.Size = new System.Drawing.Size(39, 17);
-            this.rbdNu.TabIndex = 82;
-            this.rbdNu.Text = "Nữ";
-            this.rbdNu.UseVisualStyleBackColor = true;
+            this.rdbNu.AutoSize = true;
+            this.rdbNu.Location = new System.Drawing.Point(94, 123);
+            this.rdbNu.Name = "rdbNu";
+            this.rdbNu.Size = new System.Drawing.Size(39, 17);
+            this.rdbNu.TabIndex = 82;
+            this.rdbNu.Text = "Nữ";
+            this.rdbNu.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -382,6 +382,7 @@
             this.dgvHienthi.Name = "dgvHienthi";
             this.dgvHienthi.Size = new System.Drawing.Size(762, 214);
             this.dgvHienthi.TabIndex = 0;
+            this.dgvHienthi.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHienthi_CellContentClick);
             // 
             // MaBD
             // 
@@ -483,8 +484,8 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDienthoai;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.RadioButton rbdNam;
-        private System.Windows.Forms.RadioButton rbdNu;
+        private System.Windows.Forms.RadioButton rdbNam;
+        private System.Windows.Forms.RadioButton rdbNu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.DataGridView dgvHienthi;
