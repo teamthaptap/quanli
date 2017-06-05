@@ -44,8 +44,8 @@ namespace QLTV
                 string nhande = txtNhande.Text.Trim();
                 string domat = txtDomat.Text.Trim();
                 string ngonngu = txtNgonngu.Text.Trim();
-                string theloai = cbbTheloai.Text.Trim();
-                string maNXB = cbbNXB.Text.Trim();
+                string theloai = cbbTheloai.SelectedValue.ToString();
+                string maNXB = cbbNXB.SelectedValue.ToString();
                 SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "Insert_DauSach", ma, tacgia, nhande, soluong, domat, ngonngu, theloai, maNXB);
                 MessageBox.Show("Thêmthànhcông", "THôngbáo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loaddulieu();
@@ -67,8 +67,8 @@ namespace QLTV
                 string nhande = txtNhande.Text.Trim();
                 string domat = txtDomat.Text.Trim();
                 string ngonngu = txtNgonngu.Text.Trim();
-                string theloai = cbbTheloai.Text.Trim();
-                string maNXB = cbbNXB.Text.Trim();
+                string theloai = cbbTheloai.SelectedValue.ToString();
+                string maNXB = cbbNXB.SelectedValue.ToString();
                 SqlHelper.ExecuteNonQuery(QLTV.Class.StrConnect.strConnect(), "UpDate_DS", ma, tacgia, nhande, soluong, domat, ngonngu, theloai, maNXB);
                 MessageBox.Show("Sửathànhcông", "Thôngbáo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 loaddulieu();

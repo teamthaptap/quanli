@@ -48,7 +48,7 @@ namespace QLTV
         {
             try
             {
-                string mads = cbbDausach.Text.Trim();
+                string mads = cbbDausach.SelectedValue.ToString();
                 string mas = txtMa.Text.Trim();
                 string sotrang = txtSotrang.Text.Trim();
                 string trangthai = txtTrangthai.Text.Trim();
@@ -70,7 +70,7 @@ namespace QLTV
         {
             try
             {
-                string mads = cbbDausach.Text.Trim();
+                string mads = cbbDausach.SelectedValue.ToString();
                 string mas = txtMa.Text.Trim();
                 string sotrang = txtSotrang.Text.Trim();
                 string trangthai = txtTrangthai.Text.Trim();

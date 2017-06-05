@@ -32,5 +32,20 @@ namespace QLTV
         {
             loaddulieu();
         }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

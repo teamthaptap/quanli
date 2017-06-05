@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.ApplicationBlocks.Data;
+using QLTV.Class;
 
 namespace QLTV
 {
@@ -36,6 +37,55 @@ namespace QLTV
         private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btThem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mapm = txtMa.Text.Trim();
+                string mabd = cbbbandoc.SelectedValue.ToString();
+                string trangthai = txtTrangthai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addPM", mapm, mabd, trangthai);
+                MessageBox.Show("Thêm thành công!");
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mapm = txtMa.Text.Trim();
+                MessageBox.Show("Bạn xác nhận muốn xóa ???", "Thông báo", MessageBoxButtons.YesNoCancel);
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "delPM", mapm);
+                MessageBox.Show("Xóa thành công!");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+        }
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mapm = txtMa.Text.Trim();
+                string mabd = cbbbandoc.SelectedValue.ToString();
+                string trangthai = txtTrangthai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "updatePM", mapm, mabd, trangthai);
+                MessageBox.Show("Sửa thành công!");
+                loaddulieu();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
         }
     }
 }

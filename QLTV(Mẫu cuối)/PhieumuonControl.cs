@@ -12,9 +12,10 @@ using QLTV.Class;
 
 namespace QLTV
 {
-    public partial class TheloaiControl : UserControl
+    public partial class PhieumuonControl : UserControl
     {
-        public TheloaiControl()
+      
+        public PhieumuonControl()
         {
             InitializeComponent();
             Load += loaddgv;
@@ -26,7 +27,7 @@ namespace QLTV
 
         private void loaddulieu()
         {
-            dgvHienthi.DataSource = SqlHelper.ExecuteDataset(QLTV.Class.StrConnect.strConnect(), "loadtheloai").Tables[0];
+            dgvHienthi.DataSource = SqlHelper.ExecuteDataset(QLTV.Class.StrConnect.strConnect(), "loadphieumuon").Tables[0];
         }
 
         private void btCapnhat_Click(object sender, EventArgs e)
@@ -34,18 +35,14 @@ namespace QLTV
             loaddulieu();
         }
 
-        private void dgvHienthi_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btThem_Click(object sender, EventArgs e)
         {
             try
             {
-                string ma = txtMa.Text.Trim();
-                string ten = txtTen.Text.Trim();
-                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addTL", ma, ten);
+                string mapm = txtMa.Text.Trim();
+                string mabd = cbbbandoc.SelectedValue.ToString();
+                string trangthai = txtTrangthai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addPM", mapm, mabd, trangthai);
                 MessageBox.Show("Thêm thành công!");
                 loaddulieu();
             }
@@ -53,33 +50,17 @@ namespace QLTV
             {
                 MessageBox.Show("Xảy ra lỗi!!!");
             }
-
-        }
-
-        private void btXoa_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                string ma = txtMa.Text.Trim();
-                MessageBox.Show("Bạn xác nhận muốn xóa ???", "Thông báo", MessageBoxButtons.YesNoCancel);
-                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "delTL", ma);
-                MessageBox.Show("Xóa thành công!");
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Xảy ra lỗi!!!");
-            }
-
         }
 
         private void btSua_Click(object sender, EventArgs e)
         {
+
             try
             {
-                string ma = txtMa.Text.Trim();
-                string ten = txtTen.Text.Trim();
-                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "updateTL", ma, ten);
+                string mapm = txtMa.Text.Trim();
+                string mabd = cbbbandoc.SelectedValue.ToString();
+                string trangthai = txtTrangthai.Text.Trim();
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "updatePM", mapm, mabd, trangthai);
                 MessageBox.Show("Sửa thành công!");
                 loaddulieu();
             }
@@ -87,7 +68,22 @@ namespace QLTV
             {
                 MessageBox.Show("Xảy ra lỗi!!!");
             }
-
         }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string mapm = txtMa.Text.Trim();
+                MessageBox.Show("Bạn xác nhận muốn xóa ???", "Thông báo", MessageBoxButtons.YesNoCancel);
+                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "delPM", mapm);
+                MessageBox.Show("Xóa thành công!");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Xảy ra lỗi!!!");
+            }
+        }
+
     }
 }

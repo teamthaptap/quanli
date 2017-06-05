@@ -36,23 +36,24 @@ namespace QLTV
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-                string mapm = cbbPhieu.SelectedValue.ToString();
-                string mas = cbbSach.SelectedValue.ToString();
-                DateTime ngaymuon = DateTime.Parse(dtpNgaymuon.Value.ToString());
-                DateTime ngaytra = DateTime.Parse(dtpNgaytra.Value.ToString());
-                DateTime hantra = DateTime.Parse(dtpHantra.Value.ToString());
-                string ghichu = txtGhiChu.Text.Trim();
-                SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addCTPM", mapm, mas, ngaymuon, ngaytra, hantra, ghichu);
-                MessageBox.Show("Thêm thành công!");
-                //loaddgv();
+            
+                try
+                {
+                    string mapm = cbbPhieu.SelectedValue.ToString();
+                    string mas = cbbSach.SelectedValue.ToString();
+                    DateTime ngaymuon = DateTime.Parse(dtpNgaymuon.Value.ToString());
+                    DateTime ngaytra = DateTime.Parse(dtpNgaytra.Value.ToString());
+                    DateTime hantra = DateTime.Parse(dtpHantra.Value.ToString());
+                    string ghichu = txtGhiChu.Text.Trim();
+                    SqlHelper.ExecuteNonQuery(StrConnect.strConnect(), "addCTPM", mapm, mas, ngaymuon, ngaytra, hantra, ghichu);
+                    MessageBox.Show("Thêm thành công!");
+                    //loaddgv();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Xảy ra lỗi!!!");
+                }
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Xảy ra lỗi!!!");
-            }
-        }
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -88,5 +89,7 @@ namespace QLTV
                 MessageBox.Show("Xảy ra lỗi!!!");
             }
         }
+
+
     }
 }

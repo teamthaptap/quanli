@@ -51,7 +51,7 @@
             this.dtpNgaymuon = new System.Windows.Forms.DateTimePicker();
             this.dtpNgaytra = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
             this.dtpHantra = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -166,6 +166,7 @@
             this.button2.TabIndex = 84;
             this.button2.Text = "Sửa";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -175,6 +176,7 @@
             this.button3.TabIndex = 85;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -238,7 +240,7 @@
             this.tableLayoutPanel1.Controls.Add(this.dtpNgaymuon, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.dtpNgaytra, 3, 1);
             this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.textBox1, 3, 2);
+            this.tableLayoutPanel1.Controls.Add(this.txtGhiChu, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.dtpHantra, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -293,13 +295,13 @@
             this.label3.TabIndex = 111;
             this.label3.Text = "Hạn trả :";
             // 
-            // textBox1
+            // txtGhiChu
             // 
-            this.textBox1.Location = new System.Drawing.Point(390, 69);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 27);
-            this.textBox1.TabIndex = 112;
+            this.txtGhiChu.Location = new System.Drawing.Point(390, 69);
+            this.txtGhiChu.Multiline = true;
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(203, 27);
+            this.txtGhiChu.TabIndex = 112;
             // 
             // dtpHantra
             // 
@@ -375,7 +377,7 @@
         private System.Windows.Forms.DateTimePicker dtpNgaymuon;
         private System.Windows.Forms.DateTimePicker dtpNgaytra;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.DateTimePicker dtpHantra;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPM;
