@@ -117,7 +117,104 @@ namespace ThuctapNhom
 
         private void FormThemNanhVien_Load(object sender, EventArgs e)
         {
+            getdata();
+        }
 
+        private void btLuu_Click(object sender, EventArgs e)
+        {
+            if (isEmpty()) return;
+            nv = new NhanVien_obj();
+            //try
+            //{
+            if (datetimeNgaySinh.Value < DateTime.Today)
+            {
+                nv.ngaysinhNV = datetimeNgaySinh.Value;
+                nv.IDNV = txtID.Text;
+                nv.hotenNV = txtHoten.Text;
+
+
+
+                if (rdbNam.Checked == true)
+                {
+                    nv.gioitinhNV = true;
+                }
+                else if (rdbNu.Checked == true)
+                {
+                    nv.gioitinhNV = false;
+                }
+                nv.quequanNV = txtQuequan.Text;
+                nv.diachiNV = txtDiachi.Text;
+                nv.emailNV = txtEmail.Text;
+                nv.dienthoaiNV = txtDienthoai.Text;
+                nv.soCMNDNV = txtCMND.Text;
+                nv.PB_IDNV = cmbTenPhongBan.SelectedValue.ToString();
+                nv.CV_IDNV = cmbChucVu.SelectedValue.ToString();
+
+
+                NhanVienBus bus = new NhanVienBus();
+                int ret;
+                ret = bus.insert(nv);
+                bus.close();
+                if (ret < 0)
+                {
+                    MessageBox.Show("D? li?u không h?p l?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                    //this.Hide();
+                    //FormNhanVien nv = new FormNhanVien();
+                    //nv.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Thêm m?i thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    if (MessageBox.Show("B?n có mu?n ti?p t?c thêm m?i?", "?", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                    {
+                        txtID.Clear();
+                        txtHoten.Clear();
+                        txtEmail.Clear();
+                        txtDienthoai.Clear();
+                        txtDiachi.Clear();
+                        txtCMND.Clear();
+                        txtQuequan.Clear();
+                        cmbChucVu.Text = "";
+                        cmbTenPhongBan.Text = "";
+                        return;
+                    }
+                    this.Hide();
+                    FormNhanVien nv = new FormNhanVien();
+                    nv.Show();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nh?p sai ngày!!!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show("D? li?u không h?p l?", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    return;
+            //}
+        }
+
+        private void btHuy_Click(object sender, EventArgs e)
+        {
+            txtID.Clear();
+            txtHoten.Clear();
+            txtEmail.Clear();
+            txtDienthoai.Clear();
+            txtDiachi.Clear();
+            txtCMND.Clear();
+            txtQuequan.Clear();
+            cmbChucVu.Text = "";
+            cmbTenPhongBan.Text = "";
+        }
+
+        private void btThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormNhanVien nv = new FormNhanVien();
+            nv.ShowDialog();
         }
     }
 }
